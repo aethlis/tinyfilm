@@ -1,7 +1,7 @@
 import Header from "../components/Header"
 import styles from "./Mainpage.module.css"
 import PlayButton from "../components/PlayButton"
-import Intropage from "../components/Intropage"
+// import Intropage from "../components/Intropage"
 // import TestImg from "../img/TestImg.png"
 
 function ContentAd() {
