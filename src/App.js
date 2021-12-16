@@ -1,7 +1,7 @@
 import './App.css';
 import Mainpage from "./routes/Mainpage";
 import New from './routes/New';
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <Route path="/" element={<Mainpage />}>
         </Route>
         <Route path="/new" element={<New />}>
-         </Route>
+        </Route>
       </Routes>
     </Router>
   );
