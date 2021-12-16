@@ -13,13 +13,13 @@ function Header() {
                     <img className={styles.brandLogo} src={blackBrandLogo} alt="brandLogo" />
 
                     <div className={styles.linker}>
-                        <Link to={`/home`}>
+                        <Link to={`/`}>
                             <div className={styles.links} id={styles.linkOne}>홈</div>
                         </Link>
                     </div>
 
                     <div className={styles.linker}>
-                        <Link to={`/home`}>
+                        <Link to={`/`}>
                             <div className={styles.links} id={styles.linkTwo}>WEEKLY_픽</div>
                         </Link>
                     </div>
