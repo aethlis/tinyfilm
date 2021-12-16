@@ -1,14 +1,14 @@
 import Header from "../components/Header"
 
-function New() {
-    return (
-        <div>
-            <Header />
-            <div>
+ function New() {
+     return (
+         <div>
+             <Header />
+             <div>
 
-            </div>
-        </div>
-    )
-}
+             </div>
+         </div>
+     )
+ }
 
-export default New;
+ export default New;

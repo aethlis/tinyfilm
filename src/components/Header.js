@@ -3,6 +3,9 @@ import blackBrandLogo from "../img/blackBrandLogo.svg"
 import styles from "./Header.module.css"
 
 function Header() {
+    const disableSubmit = (event) => {
+        event.preventDefault()
+    }
     return (
         <div className={styles.header}>
             <div className={styles.container}>
@@ -13,7 +16,7 @@ function Header() {
                         <Link to={`/`}>
                             <div className={styles.links} id={styles.linkOne}>홈</div>
                         </Link>
-                    </div>
+                    </div>d
 
                     <div className={styles.linker}>
                         <Link to={`/`}>
@@ -22,13 +25,13 @@ function Header() {
                     </div>
 
                     <div className={styles.linker}>
-                        <Link to={`/New`}>
+                        <Link to={`/`}>
                             <div className={styles.links} id={styles.linkThree}>NEW!</div>
                         </Link>
                     </div>
                 </div>
                 <div className={styles.searchWrap}>
-                    <form>
+                    <form onSubmit={disableSubmit}>
                         <input className={styles.searchBar} type="text" placeholder="search..." />
                     </form>
                 </div>

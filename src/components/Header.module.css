@@ -1,12 +1,13 @@
 .brandLogo {
     width: auto;
     height: 43px;
+    pointer-events: none;
 }
 .header {
     position: fixed;
     width: 100vw;
     height: 80px;
-    /* background-color: grey; */
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,15 +34,16 @@
 }
 
 #linkOne {
-    font-weight: normal;
+    font-weight: lighter;
 }
 
 #linkTwo {
-    font-weight: normal;
+    font-weight: lighter;
 }
 
 #linkThree {
-    font-weight: bold;
+    font-family: "GMarket Bold";
+    font-weight: lighter;
 }
 
 .links::selection, .brandLogo::selection {
@@ -59,6 +61,7 @@
 
 .searchBar {
     border: #7F7F7F solid 2px;
+    /* border: black solid 2px; */
     border-radius: calc(133px / 2);
     width: 133px;
     height: 23px;
@@ -68,6 +71,7 @@
 
 .searchBar::placeholder {
     color: #7F7F7F;
+    /* color: black; */
 }
 
 input:focus {
