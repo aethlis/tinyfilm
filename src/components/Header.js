@@ -25,7 +25,7 @@ function Header() {
                     </div>
 
                     <div className={styles.linker}>
-                        <Link to={`/`}>
+                        <Link to={`/new`}>
                             <div className={styles.links} id={styles.linkThree}>NEW!</div>
                         </Link>
                     </div>
