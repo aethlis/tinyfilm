@@ -1,6 +1,6 @@
 import styles from "./Intropage.module.css"
 import {Link} from "react-router-dom"
-import Mainpage from "../routes/Mainpage";
+// import Mainpage from "../routes/Mainpage";
 
 function Intropage() {
     return (
