@@ -1,0 +1,75 @@
+.brandLogo {
+    width: auto;
+    height: 43px;
+}
+.header {
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    /* background-color: grey; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "GMarket Normal";
+}
+
+.container {
+    width: calc(100vw - 210px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: orange; */
+}
+
+.menu {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    color: black;
+}
+
+#linkOne {
+    font-weight: normal;
+}
+
+#linkTwo {
+    font-weight: normal;
+}
+
+#linkThree {
+    font-weight: bold;
+}
+
+.links::selection, .brandLogo::selection {
+    background: transparent;
+}
+
+.linker {
+    margin-left: 29px;
+}
+
+.searchWrap {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.searchBar {
+    border: #7F7F7F solid 2px;
+    border-radius: calc(133px / 2);
+    width: 133px;
+    height: 23px;
+    padding-left: 10px;
+    background: transparent;
+}
+
+.searchBar::placeholder {
+    color: #7F7F7F;
+}
+
+input:focus {
+    outline: none;
+}
