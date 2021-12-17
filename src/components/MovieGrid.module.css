@@ -1,0 +1,19 @@
+.movie_wrap {
+    width: fit-content;
+    height: fit-content;
+}
+
+.title {
+
+}
+
+.img_wrapper {
+    width: 296px;
+    height: 166px;
+    background-color: black;
+}
+
+.coverImg {
+    height: 100%;
+    width: auto;
+}

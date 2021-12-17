@@ -1,6 +1,6 @@
 .fullpage {
     width: 100vw;
-    height: 1000px;
+    height: 3000px;
 }
 
 .ContentAd_container {
@@ -60,4 +60,21 @@
     height: auto;
     margin-bottom: 285px;
     z-index: -1;
+}
+
+
+
+.movie_container {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.movie_wrap {
+    display: flex;
+    flex-flow: row wrap;
+    width: 1510px;
+    height: fit-content;
+    background-color: orange;
 }
