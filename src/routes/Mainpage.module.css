@@ -74,7 +74,7 @@
 .movie_wrap {
     display: flex;
     flex-flow: row wrap;
-    width: 1510px;
+    width: calc(100vw - 170px);
     height: fit-content;
     background-color: orange;
 }

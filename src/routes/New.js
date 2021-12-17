@@ -23,6 +23,7 @@ function New() {
                 <NewMainMovie
                     coverImg={newMainMovie.medium_cover_image}
                     title={newMainMovie.title}
+                    id={newMainMovie.id}
                 />
             ))}
         </div >

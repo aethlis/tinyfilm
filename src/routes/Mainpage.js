@@ -4,7 +4,8 @@ import PlayButton from "../components/PlayButton"
 // import Intropage from "../components/Intropage"
 // import TestImg from "../img/TestImg.png"
 import MovieGrid from "../components/MovieGrid"
-import { useState } from "react"
+import { useState, useContext } from "react"
+import App from "../App"
 
 // function FetchMovie() {
 //     const [movies, setMovies] = useState([])
@@ -58,7 +59,7 @@ function Mainpage(loading, movies) {
                 </div> */}
                 <div className={styles.movie_container}>
                     <div className={styles.movie_wrap}>
-                        <MovieGrid/>
+                            <MovieGrid />
                     </div>
                 </div>
             </div>

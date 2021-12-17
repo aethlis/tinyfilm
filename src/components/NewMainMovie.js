@@ -1,10 +1,10 @@
 import propTypes, { array } from "prop-types";
 import styles from "./NewMainMovie.module.css"
 
-function NewMainMovie({ coverImg, title }) {
+function NewMainMovie({ id ,coverImg, title }) {
     return (
         <div>
-            <div className={styles.newMainMovieCoverImg}>
+            <div className={styles.newMainMovieCoverImg} id={id}>
                 <img src={coverImg} />
             </div>
             <h1>{title}</h1>
