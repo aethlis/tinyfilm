@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/tinyfilm/static/css/main.6b2c7cf5.css",
-    "main.js": "/tinyfilm/static/js/main.fb47bc9e.js",
+    "main.css": "/tinyfilm/static/css/main.8a2e32fa.css",
+    "main.js": "/tinyfilm/static/js/main.de8a85f9.js",
     "static/media/GmarketSansTTFBold.ttf": "/tinyfilm/static/media/GmarketSansTTFBold.69428064ef8eee25be33.ttf",
     "static/media/GmarketSansTTFMedium.ttf": "/tinyfilm/static/media/GmarketSansTTFMedium.d4bac6b182bed73c9375.ttf",
     "static/media/GmarketSansTTFLight.ttf": "/tinyfilm/static/media/GmarketSansTTFLight.efaa8f19ead1555b1c39.ttf",
     "static/media/TestImg.png": "/tinyfilm/static/media/TestImg.c4b9504fe29dcb5ca4da.png",
     "static/media/blackBrandLogo.svg": "/tinyfilm/static/media/blackBrandLogo.69d8656d5218bc6e2fa16537b12a1e73.svg",
     "index.html": "/tinyfilm/index.html",
-    "main.6b2c7cf5.css.map": "/tinyfilm/static/css/main.6b2c7cf5.css.map",
-    "main.fb47bc9e.js.map": "/tinyfilm/static/js/main.fb47bc9e.js.map"
+    "main.8a2e32fa.css.map": "/tinyfilm/static/css/main.8a2e32fa.css.map",
+    "main.de8a85f9.js.map": "/tinyfilm/static/js/main.de8a85f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b2c7cf5.css",
-    "static/js/main.fb47bc9e.js"
+    "static/css/main.8a2e32fa.css",
+    "static/js/main.de8a85f9.js"
   ]
 }
