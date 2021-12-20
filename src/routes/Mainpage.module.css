@@ -72,9 +72,13 @@
 }
 
 .movie_wrap {
-    display: flex;
-    flex-flow: row wrap;
-    width: calc(100vw - 170px);
+    display: grid;
+    grid-column-gap: 22px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    /* flex-flow: row wrap; */
+    width: calc(100vw - 166px);
     height: fit-content;
-    background-color: orange;
+    /* background-color: orange; */
+    justify-content: space-between;
 }

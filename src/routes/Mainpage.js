@@ -60,6 +60,25 @@ function Mainpage(loading, movies) {
                 <div className={styles.movie_container}>
                     <div className={styles.movie_wrap}>
                             <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
+                            <MovieGrid />
                     </div>
                 </div>
             </div>

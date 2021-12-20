@@ -19,7 +19,7 @@ function MovieGrid(id, title, coverImg, summary) {
             </div>
             <div className={styles.text_box}>
                 <div className={styles.title}> The Dun Dun</div>
-                <div className={styles.summary}>Hi Hello AJDNAJND</div>
+                <div className={styles.summary}>Hi Hello AJDNAJNdadasjnfksdfjsfhjshdkhkashdaksdhsndkcnskndjcnsjdjasjhdakhdsjhD</div>
             </div>
         </div>
     )

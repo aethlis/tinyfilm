@@ -1,15 +1,30 @@
 .movie_wrap {
-    width: fit-content;
+    width: 100%;
     height: fit-content;
 }
 
+.text_box {
+    width: 100%;
+    height: 130px;
+}
+
 .title {
+    margin-top: 6px;
+    font-size: 18px;
+    font-family: "GMarket Bold";
+}
+
+.summary {
+    margin-top: 4px;
+    font-size: 14px;
+    width: 100%;
+    word-break: break-all;
 
 }
 
 .img_wrapper {
-    width: 296px;
-    height: 166px;
+    width: 100%;
+    height: calc(21.548vw / 16 * 9);
     background-color: black;
 }
 
