@@ -1,6 +1,5 @@
 import styles from "./MovieGrid.module.css"
 
-
 function MovieGrid(id, title, coverImg, summary) {
     return (
         // <div className={styles.movie_wrap}>

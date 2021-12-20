@@ -5,7 +5,7 @@
 
 .ContentAd_container {
     width: 100vw;
-    height: fit-content;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +13,8 @@
 }
 
 .ContentAd {
-    width:  calc(100vw - 170px);
+    /* width:  calc(100vw - 170px); */
+    width: 90vw;
     margin: 80px 0px;
     height: calc(100vh - 160px);
     /* border: black 2px solid; */
@@ -64,21 +65,41 @@
 
 
 
+
+
+
+
+
+
 .movie_container {
     width: 100vw;
     height: fit-content;
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .movie_wrap {
     display: grid;
-    grid-column-gap: 22px;
+    grid-column-gap: 1.607vw;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: auto;
     /* flex-flow: row wrap; */
-    width: calc(100vw - 166px);
+    /* width: calc(100vw - 166px); */
+    width: 90vw;
     height: fit-content;
     /* background-color: orange; */
     justify-content: space-between;
+}
+
+@media (min-width: 1920px) {
+    .movie_wrap {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 975px) {
+    .movie_wrap {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
