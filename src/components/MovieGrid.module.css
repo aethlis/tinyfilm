@@ -48,8 +48,18 @@
         height: calc(28.929vw / 16 * 9);
     }
 }
+@media (max-width: 414px) {
+    .img_wrapper {
+        height: calc(44.196vw / 16 * 9);
+    }
+}
 
 .coverImg {
     height: 100%;
     width: auto;
+}
+
+.functionElement {
+    width: fit-content;
+    height: fit-content;
 }

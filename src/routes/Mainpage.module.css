@@ -104,3 +104,9 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+@media (max-width: 414px) {
+    .movie_wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

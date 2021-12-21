@@ -4,9 +4,9 @@ import PlayButton from "../components/PlayButton";
 // import Intropage from "../components/Intropage"
 // import TestImg from "../img/TestImg.png";
 import MovieGrid from "../components/MovieGrid";
+import HoverShow from "../components/MovieHoverOver";
 import { useMovieAPI } from "../contexts/FetchAPI";
-import { FetchAPI } from "../contexts/FetchAPI";
-import ReactDOM from 'react-dom'
+import { useHoverOver } from "../contexts/HoverContext";
 // import { useContext } from 'react';
 
 function ContentAd() {
@@ -28,6 +28,8 @@ function ContentAd() {
 
 function Mainpage() {
     const {movies} = useMovieAPI();
+    const {ID, COVERIMG, HIDE, TITLE, SUMMARY, GENRES, setID, setCOVERIMG,setHIDE, setTITLE, setSUMMARY, setGENRES} = useHoverOver();
+    console.log(ID)
     return (
         <div>
             <Header />
@@ -40,6 +42,14 @@ function Mainpage() {
                         {movies.map((movie) => {
                             return (
                                 <MovieGrid
+                                    mouseHover={(movie) => {
+                                        setID(movie.id)
+                                        setCOVERIMG(movie.medium_cover_image)
+                                        setTITLE(movie.title)
+                                        setSUMMARY(movie.summary)
+                                        setGENRES(movie.genres)
+                                        setHIDE(false)
+                                    }}
                                     key={movie.id}
                                     id={movie.id}
                                     title={movie.title}
@@ -50,6 +60,18 @@ function Mainpage() {
                         })}
                     </div>
                 </div>
+                <div>
+                    {HIDE ? null : 
+                        <HoverShow 
+                            id={ID}
+                            title={TITLE}
+                            coverImg={COVERIMG}
+                            summary={SUMMARY}
+                            genres={GENRES}
+                        />
+                    }
+                </div>
+
                 {/* <div className={styles.movie_container}>
                         <div className={styles.movie_wrap}>
                             <MovieGrid/>

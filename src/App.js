@@ -2,10 +2,12 @@ import './App.css';
 import Mainpage from "./routes/Mainpage";
 import New from './routes/New';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {FetchAPIProvider} from "./contexts/FetchAPI"
+import { FetchAPIProvider } from "./contexts/FetchAPI"
+import { HoverOverProvider } from './contexts/HoverContext';
 
 function App() {
   return (
+    <HoverOverProvider>
     <FetchAPIProvider>
       <Router basename={process.env.PUBLIC_URL}>
         <Routes>
@@ -16,6 +18,7 @@ function App() {
         </Routes>
       </Router>
     </FetchAPIProvider>
+    </HoverOverProvider>
   );
 }
 

@@ -1,0 +1,14 @@
+.container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.hoverpage {
+    width: 810px;
+    height: 2000px;
+    background-color: slategray;
+}
