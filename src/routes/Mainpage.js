@@ -1,26 +1,13 @@
-import Header from "../components/Header"
-import styles from "./Mainpage.module.css"
-import PlayButton from "../components/PlayButton"
+import Header from "../components/Header";
+import styles from "./Mainpage.module.css";
+import PlayButton from "../components/PlayButton";
 // import Intropage from "../components/Intropage"
-// import TestImg from "../img/TestImg.png"
-import MovieGrid from "../components/MovieGrid"
-import { useState, useContext } from "react"
-import App from "../App"
-
-// function FetchMovie() {
-//     const [movies, setMovies] = useState([])
-//     const [loading, setLoading] = useState("")
-
-//     const [id, setId] = useState("")
-//     const [title, setTitle] = useState("")
-//     const [summary, setSummary] = useState("")
-//     const [coverImg, setImg] = useState("")
-//     const [runtime, setRuntime] = useState("")
-//     const [genres, setGenres] = useState([])
-//     return (
-//         Mainpage(loading, movies)
-//     )
-// }
+// import TestImg from "../img/TestImg.png";
+import MovieGrid from "../components/MovieGrid";
+import { useMovieAPI } from "../contexts/FetchAPI";
+import { FetchAPI } from "../contexts/FetchAPI";
+import ReactDOM from 'react-dom'
+// import { useContext } from 'react';
 
 function ContentAd() {
     return (
@@ -39,7 +26,8 @@ function ContentAd() {
     )
 }
 
-function Mainpage(loading, movies) {
+function Mainpage() {
+    const {movies} = useMovieAPI();
     return (
         <div>
             <Header />
@@ -47,40 +35,43 @@ function Mainpage(loading, movies) {
                 <div className={styles.ContentAd_container}>
                     <ContentAd />
                 </div>
-                {/* <div>
-                    {movies.map((movie) => {
-                        <MovieGrid
-                            // id={}
-                            // coverImg={}
-                            // title={}
-                            // summary={}
-                        />
-                    })}
-                </div> */}
                 <div className={styles.movie_container}>
                     <div className={styles.movie_wrap}>
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
-                            <MovieGrid />
+                        {movies.map((movie) => {
+                            return (
+                                <MovieGrid
+                                    key={movie.id}
+                                    id={movie.id}
+                                    title={movie.title}
+                                    coverImg={movie.background_image_original}
+                                    summary={movie.summary}
+                                />
+                            )
+                        })}
                     </div>
                 </div>
+                {/* <div className={styles.movie_container}>
+                        <div className={styles.movie_wrap}>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                            <MovieGrid/>
+                        </div>
+                </div> */}
             </div>
         </div>
     )
