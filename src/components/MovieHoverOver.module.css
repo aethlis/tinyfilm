@@ -61,7 +61,7 @@
     align-items: center;
     overflow: hidden;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 20px black;
 }
 
 .videoPlayer img {
@@ -85,7 +85,7 @@
     height: 17.857vw;
     overflow: hidden;
     border-radius: 5px;
-    box-shadow: 5px 10px 10px black;
+    box-shadow: 5px 7px 10px black;
     display: flex;
     align-items: center;
     justify-content: center;
