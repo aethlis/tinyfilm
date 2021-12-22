@@ -28,8 +28,20 @@ function ContentAd() {
 
 function Mainpage() {
     const {movies} = useMovieAPI();
-    const {ID, COVERIMG, HIDE, TITLE, SUMMARY, GENRES, setID, setCOVERIMG,setHIDE, setTITLE, setSUMMARY, setGENRES} = useHoverOver();
-    console.log(ID)
+    const {ID, COVERIMG, BGIMG, HIDE, TITLE, SUMMARY, GENRES, setHIDE} = useHoverOver();
+    const disableScroll = () => {
+        const x = window.scrollX;
+        const y = window.scrollY;
+        window.onscroll = function () {window.scrollTo(x, y);}
+    }
+    const enableScroll = () => {
+        window.onscroll = function () {}
+    }
+    if (HIDE !== true) {
+        disableScroll()
+    } else if (HIDE !== false) {
+        enableScroll()
+    }
     return (
         <div>
             <Header />
@@ -42,35 +54,32 @@ function Mainpage() {
                         {movies.map((movie) => {
                             return (
                                 <MovieGrid
-                                    mouseHover={(movie) => {
-                                        setID(movie.id)
-                                        setCOVERIMG(movie.medium_cover_image)
-                                        setTITLE(movie.title)
-                                        setSUMMARY(movie.summary)
-                                        setGENRES(movie.genres)
-                                        setHIDE(false)
-                                    }}
                                     key={movie.id}
                                     id={movie.id}
                                     title={movie.title}
-                                    coverImg={movie.background_image_original}
+                                    coverImg={movie.large_cover_image}
+                                    bgImg={movie.background_image_original}
                                     summary={movie.summary}
                                 />
                             )
                         })}
                     </div>
                 </div>
-                <div>
-                    {HIDE ? null : 
-                        <HoverShow 
-                            id={ID}
-                            title={TITLE}
-                            coverImg={COVERIMG}
-                            summary={SUMMARY}
-                            genres={GENRES}
-                        />
-                    }
-                </div>
+
+                {!HIDE ? 
+                    <HoverShow 
+                        id={ID}
+                        title={TITLE}
+                        coverImg={COVERIMG}
+                        bgImg={BGIMG}
+                        summary={SUMMARY}
+                        genres={GENRES}
+                        hidden={HIDE}
+                        onClick={() => {
+                            setHIDE(true)
+                        }}
+                    /> : null
+                }
 
                 {/* <div className={styles.movie_container}>
                         <div className={styles.movie_wrap}>

@@ -9,6 +9,7 @@ export function useHoverOver() {
 export function HoverOverProvider({children}) {
     const [ID, setID] = useState("");
     const [COVERIMG, setCOVERIMG] = useState("")
+    const [BGIMG, setBGIMG] = useState("")
     const [HIDE, setHIDE] = useState(true)
     const [TITLE, setTITLE] = useState("")
     const [SUMMARY, setSUMMARY] = useState("")
@@ -17,13 +18,12 @@ export function HoverOverProvider({children}) {
     // useEffect(() => {
     //     setID()
     //     setCOVERIMG()
-    //     setHIDE()
     //     setTITLE()
     //     setSUMMARY()
     //     setGENRES()
     // }, []);
     return (
-        <HoverOver.Provider value={{ID, COVERIMG, HIDE, TITLE, SUMMARY, GENRES, setID, setCOVERIMG,setHIDE, setTITLE, setSUMMARY, setGENRES}}>
+        <HoverOver.Provider value={{ID, COVERIMG, BGIMG, HIDE, TITLE, SUMMARY, GENRES, setID, setCOVERIMG, setBGIMG, setHIDE, setTITLE, setSUMMARY, setGENRES}}>
             {children}
         </HoverOver.Provider>
     )
