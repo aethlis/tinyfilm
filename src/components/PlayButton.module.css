@@ -17,3 +17,7 @@
     height: auto;
     margin-right: 5px;
 }
+
+.playBtn div::selection {
+    background: transparent;
+}

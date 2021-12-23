@@ -12,13 +12,15 @@
 
 .title {
     margin-top: 0.557vw;
-    font-size: 1.071vw;
+    /* font-size: 1.071vw; */
+    font-size: 17px;
     font-family: "GMarket Bold";
 }
 
 .summary {
     margin-top: 0.595vw;
-    font-size: 0.833vw;
+    /* font-size: 0.833vw; */
+    font-size: 14px;
     width: 100%;
     word-break: break-all;
 }
@@ -47,10 +49,26 @@
         height: calc(16.715vw / 16 * 9);
     }
 }
+
+@media (max-width: 1350px) {
+    .img_wrapper {
+        height: calc(21.295vw / 16 * 9);
+    }
+}
+
 @media (max-width: 975px) {
     .img_wrapper {
         height: calc(28.929vw / 16 * 9);
     }
+
+    .summary {
+        display: none;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
 }
 @media (max-width: 414px) {
     .img_wrapper {
@@ -66,4 +84,9 @@
 .functionElement {
     width: fit-content;
     height: fit-content;
+}
+
+
+.text_box {
+    color: black;
 }

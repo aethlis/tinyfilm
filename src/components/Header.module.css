@@ -1,17 +1,20 @@
 .brandLogo {
     width: auto;
     height: 43px;
+    /* height: 2.560vw; */
     pointer-events: none;
 }
 .header {
     position: fixed;
     width: 100vw;
+    /* height: 4.762vw; */
     height: 80px;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "GMarket Normal";
+    /* font-size: 0.833vw; */
 }
 
 .container {
@@ -32,6 +35,7 @@
 
 .links {
     color: black;
+    font-size: 1rem;
 }
 
 #linkOne {
@@ -53,6 +57,7 @@
 
 .linker {
     margin-left: 29px;
+    /* margin-left: 1.726vw; */
 }
 
 .searchWrap {
@@ -65,9 +70,12 @@
     /* border: black solid 2px; */
     border-radius: calc(133px / 2);
     width: 133px;
+    /* width: 7.917vw; */
     height: 23px;
+    /* height: 1.369vw; */
     padding-left: 10px;
     background: transparent;
+    /* font-size: 0.833vw; */
 }
 
 .searchBar::placeholder {
