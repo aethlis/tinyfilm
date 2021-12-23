@@ -23,5 +23,32 @@
 body {
   margin: 0;
   font-family: "GMarket Normal";
+  /* font-size: 14px; */
+}
+
+html {
   font-size: 14px;
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1350px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 975px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media (max-width: 414px) {
+  html {
+    font-size: 4px;
+  }
 }
