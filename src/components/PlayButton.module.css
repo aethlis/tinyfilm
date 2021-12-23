@@ -1,6 +1,19 @@
 .playBtn {
-    width: 100px;
-    height: 50px;
+    width: fit-content;
+    height: fit-content;
     color: white;
+    font-size: 15px;
     border: white solid 1px;
+    font-weight: 900;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.arrowItem {
+    width: 10px;
+    height: auto;
+    margin-right: 5px;
 }

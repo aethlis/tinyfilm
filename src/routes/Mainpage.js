@@ -7,6 +7,7 @@ import MovieGrid from "../components/MovieGrid";
 import HoverShow from "../components/MovieHoverOver";
 import { useMovieAPI } from "../contexts/FetchAPI";
 import { useHoverOver } from "../contexts/HoverContext";
+import { useEffect } from "react";
 // import { useContext } from 'react';
 
 function ContentAd() {
@@ -28,7 +29,7 @@ function ContentAd() {
 
 function Mainpage() {
     const {movies} = useMovieAPI();
-    const {ID, COVERIMG, BGIMG, HIDE, TITLE, SUMMARY, GENRES, setHIDE} = useHoverOver();
+    const {ID, COVERIMG, BGIMG, HIDE, TITLE, SUMMARY, GENRES, setHIDE, RUNTIME} = useHoverOver();
     const disableScroll = () => {
         const x = window.scrollX;
         const y = window.scrollY;
@@ -37,11 +38,13 @@ function Mainpage() {
     const enableScroll = () => {
         window.onscroll = function () {}
     }
-    if (HIDE !== true) {
-        disableScroll()
-    } else if (HIDE !== false) {
-        enableScroll()
-    }
+    useEffect(() => {
+        if (HIDE !== true) {
+            disableScroll()
+        } else if (HIDE !== false) {
+            enableScroll()
+        }
+    }, [HIDE]);
     return (
         <div>
             <Header />
@@ -60,6 +63,7 @@ function Mainpage() {
                                     coverImg={movie.large_cover_image}
                                     bgImg={movie.background_image_original}
                                     summary={movie.summary}
+                                    runtime={movie.runtime}
                                 />
                             )
                         })}
@@ -75,9 +79,7 @@ function Mainpage() {
                         summary={SUMMARY}
                         genres={GENRES}
                         hidden={HIDE}
-                        onClick={() => {
-                            setHIDE(true)
-                        }}
+                        runtime={RUNTIME}
                     /> : null
                 }
 

@@ -1,9 +1,11 @@
 import styles from "./PlayButton.module.css"
+import playBtnImage from "../img/playBtn.svg"
 
 function PlayButton() {
     return (
         <div className={styles.playBtn}>
-            ㅈㅐ새ㅇ
+            <img className={styles.arrowItem} src={playBtnImage} alt="playBtn"/>
+            <div>재생</div>
         </div>
     )
 }

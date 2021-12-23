@@ -15,6 +15,11 @@
   /* font-weight: bold; */
 }
 
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./fonts/SF-Pro.ttf") format('truetype');
+}
+
 body {
   margin: 0;
   font-family: "GMarket Normal";
