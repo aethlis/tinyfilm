@@ -1,4 +1,4 @@
-import React, { createContext ,useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 import App from "../App"
 
 export const FetchAPI = createContext();
@@ -8,7 +8,7 @@ export function useMovieAPI() {
 }
 
 export function FetchAPIProvider({ children }) {
-    const [movies, setMovies] = useState ([])
+    const [movies, setMovies] = useState([])
     const [loading, setLoading] = useState(true)
     // const [id, setId] = useState("")
     // const [title, setTitle] = useState("")
@@ -24,12 +24,13 @@ export function FetchAPIProvider({ children }) {
             )
         ).json();
         setMovies(json.data.movies);
+        console.log(json)
     };
     useEffect(() => {
         getMovies();
     }, []);
     return (
-        <FetchAPI.Provider value={{movies}}>
+        <FetchAPI.Provider value={{ movies }}>
             {children}
         </FetchAPI.Provider>
     )
