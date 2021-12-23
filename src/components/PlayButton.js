@@ -1,7 +1,9 @@
+import styles from "./PlayButton.module.css"
+
 function PlayButton() {
     return (
-        <div>
-            A Button
+        <div className={styles.playBtn}>
+            ㅈㅐ새ㅇ
         </div>
     )
 }

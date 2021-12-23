@@ -25,7 +25,8 @@
 
 .img_wrapper {
     width: 100%;
-    height: calc(21.548vw / 16 * 9);
+    /* height: calc(21.548vw / 16 * 9); */
+    height: calc(16.715vw / 16 * 9);
     background-color: black;
     display: flex;
     overflow: hidden;
