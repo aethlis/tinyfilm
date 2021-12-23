@@ -38,17 +38,24 @@ html {
 
 @media (max-width: 1350px) {
   html {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 975px) {
   html {
-    font-size: 7px;
+    font-size: 13px;
   }
 }
+
 @media (max-width: 414px) {
   html {
-    font-size: 4px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 10px;
   }
 }

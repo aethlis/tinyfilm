@@ -15,7 +15,8 @@
 .ContentAd {
     /* width:  calc(100vw - 170px); */
     width: 90vw;
-    margin: 5.71428571rem 0px;
+    margin-top: 5.71428571rem;
+    margin-bottom: 5vw;
     /* height: 4.762vw; */
     height: calc(90vw / 16 * 9 - 5.71428571rem * 2 + 38.5px);
     /* height: 82.0945945945946vh; */
