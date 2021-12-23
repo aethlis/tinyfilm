@@ -30,7 +30,7 @@ export function FetchAPIProvider({ children }) {
         getMovies();
     }, []);
     return (
-        <FetchAPI.Provider value={{ movies }}>
+        <FetchAPI.Provider value={{ movies, loading, setLoading }}>
             {children}
         </FetchAPI.Provider>
     )

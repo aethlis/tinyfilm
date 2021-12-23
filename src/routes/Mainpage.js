@@ -29,7 +29,7 @@ function ContentAd() {
 
 function Mainpage() {
     const {movies} = useMovieAPI();
-    const {ID, COVERIMG, BGIMG, HIDE, TITLE, SUMMARY, GENRES, setHIDE, RUNTIME} = useHoverOver();
+    const {ID, COVERIMG, BGIMG, HIDE, TITLE, SUMMARY, GENRES, RUNTIME} = useHoverOver();
     const disableScroll = () => {
         const x = window.scrollX;
         const y = window.scrollY;
