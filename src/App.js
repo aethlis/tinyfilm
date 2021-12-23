@@ -8,16 +8,16 @@ import { HoverOverProvider } from './contexts/HoverContext';
 function App() {
   return (
     <HoverOverProvider>
-    <FetchAPIProvider>
-      <Router basename={process.env.PUBLIC_URL}>
-        <Routes>
-          <Route path="/" element={<Mainpage />}>
-          </Route>
-          <Route path="/new" element={<New />}>
-          </Route>
-        </Routes>
-      </Router>
-    </FetchAPIProvider>
+      <FetchAPIProvider>
+        <Router basename={process.env.PUBLIC_URL}>
+          <Routes>
+            <Route path="/" element={<Mainpage />}>
+            </Route>
+            <Route path="/new" element={<New />}>
+            </Route>
+          </Routes>
+        </Router>
+      </FetchAPIProvider>
     </HoverOverProvider>
   );
 }
