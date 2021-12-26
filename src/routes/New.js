@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import NewMovies from "../components/NewMovies";
 import { useMovieAPI } from "../contexts/FetchAPI";
@@ -8,13 +8,13 @@ function New() {
     return (
         <div>
             <Header />
-            {movies.map((newMovies) => (
-                <NewMovies
-                    backgroundImg={newMovies.background_image}
-                    key={newMovies.id}
-                    index={movies.indexOf(newMovies)}
-                />
-            ))}
+            <NewMovies
+                movie1={movies[0]}
+                movie2={movies[1]}
+                movie3={movies[2]}
+                movie4={movies[3]}
+                movie5={movies[4]}
+            />
         </div >
     );
 }

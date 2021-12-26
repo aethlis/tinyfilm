@@ -24,7 +24,7 @@ export function FetchAPIProvider({ children }) {
             )
         ).json();
         setMovies(json.data.movies);
-        console.log(json)
+        console.log(json);
     };
     useEffect(() => {
         getMovies();
