@@ -2,18 +2,19 @@
     width: fit-content;
     height: fit-content;
     color: white;
-    font-size: 15px;
+    font-size: 1rem;
     border: white solid 1px;
     font-weight: 900;
-    border-radius: 10px;
+    border-radius: 0.714rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 15px;
+    padding: 0.714rem 1.071rem;
 }
 
 .arrowItem {
-    width: 10px;
+    width: 0.714rem;
+    /* width: 10px; */
     height: auto;
     margin-right: 5px;
 }

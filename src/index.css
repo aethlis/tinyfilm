@@ -44,18 +44,24 @@ html {
 
 @media (max-width: 975px) {
   html {
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 414px) {
   html {
-    font-size: 11px;
+    font-size: 8px;
   }
 }
 
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
   html {
-    font-size: 10px;
+    font-size: 4px;
   }
-}
+} */
+
+/* @media (max-width: 320px) {
+  html {
+    font-size: 1px;
+  }
+} */

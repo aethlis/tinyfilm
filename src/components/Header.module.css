@@ -6,6 +6,7 @@
 }
 .header {
     position: fixed;
+    top: 0;
     width: 100vw;
     /* height: 4.762vw; */
     height: 5.71428571rem;
@@ -40,10 +41,12 @@
 
 #linkOne {
     font-weight: lighter;
+    font-size: 1rem;
 }
 
 #linkTwo {
     font-weight: lighter;
+    font-size: 1rem;
 }
 
 #linkThree {
@@ -77,6 +80,7 @@
     background: transparent;
     /* font-size: 0.833vw; */
     line-height: 1.55rem;
+    font-size: 1rem;
 }
 
 .searchBar::placeholder {
@@ -89,8 +93,8 @@ input:focus {
     outline: none;
 }
 
-/* @media (max-width: 750px) {
-    .container {
-        width: calc(100vw - 80px);
+@media (max-width: 375px) {
+    .header {
+        height: 50px;
     }
-} */
+}
