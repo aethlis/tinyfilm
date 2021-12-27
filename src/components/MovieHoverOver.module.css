@@ -50,6 +50,8 @@
     justify-content: center;
     border-radius: 5px;
     overflow: hidden;
+
+    box-shadow: 0px 5px 30px black;
 }
 
 .infoWrap {
@@ -73,6 +75,8 @@
 .videoPlayer img {
     /* width: auto; */
     height: 120%;
+
+    pointer-events: none;
 }
 
 .infoBox {
@@ -101,6 +105,8 @@
 .coverImgWrap img {
     width: auto;
     height: 100%;
+
+    pointer-events: none;
 }
 
 .info {
@@ -111,6 +117,10 @@
 .buttons_title, .title, .summary, .genres {
     margin-bottom: 0.714rem;
     color: white;
+}
+
+.buttons_title {
+    cursor: default;
 }
 
 .title ,.buttons_title {
@@ -161,11 +171,19 @@
     color: white;
     font-size: 1rem;
     margin-left: 1rem;
+
+    cursor: default;
 }
 
 .minutes {
     font-size: 0.85rem;
     margin-left: 3px;
+
+    cursor: default;
+}
+
+.runtime::selection, .minutes::selection, .title::selection, .buttons_title::selection {
+    background: transparent;
 }
 
 @media (max-width: 900px) {

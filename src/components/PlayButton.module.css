@@ -10,6 +10,8 @@
     justify-content: center;
     align-items: center;
     padding: 0.714rem 1.071rem;
+
+    cursor: default;
 }
 
 .arrowItem {
@@ -17,8 +19,10 @@
     /* width: 10px; */
     height: auto;
     margin-right: 5px;
+
+    pointer-events: none;
 }
 
-.playBtn div::selection {
+.playBtn div::selection, .arrowItem::selection {
     background: transparent;
 }

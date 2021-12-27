@@ -14,8 +14,14 @@
 .closeBtn img {
     width: 50%;
     height: auto;
+
+    pointer-events: none;
 }
 
 .closeBtn:hover {
     transform: scale(1.2);
+}
+
+.closeBtn::selection, .closeBtn img::selection {
+    background: transparent;
 }
