@@ -6,7 +6,8 @@
     display: flex;
     justify-content: center;
     z-index: 50px;
-    overflow: scroll;
+    /* overflow-x: hidden; */
+    overflow-y: scroll;
     top: 0;
     /* background: rgba(0, 0, 0, 0.7); */
 }
@@ -16,15 +17,18 @@
     background: rgba(0, 0, 0, 0.7);
     width: 100vw;
     height: 100vh;
+
+    padding: 40vw;
+    top: -20vw;
     /* background-color: orange; */
 }
 
-.filterComp {
-    width: 100%;
-    height: 100%;
+/* .filterComp {
+    width: 130%;
+    height: 130%;
     background-color: black;
     opacity: 0.7;
-}
+} */
 
 .hoverWrap {
     width: 100vw;
@@ -36,7 +40,7 @@
 }
 
 .hoverpage {
-    width: 48.214vw;
+    width: 810px;
     height: fit-content;
     background-color: rgb(26, 26, 26);
     z-index: 60;
@@ -55,7 +59,7 @@
 
 .videoPlayer {
     width: 100%;
-    height: 23.810vw;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,10 +85,10 @@
 }
 
 .coverImgWrap {
-    /* width: 200px; */
-    width: 11.905vw;
-    /* height: 300px; */
-    height: 17.857vw;
+    width: 200px;
+    /* width: 11.905vw; */
+    height: 300px;
+    /* height: 17.857vw; */
     overflow: hidden;
     border-radius: 5px;
     /* box-shadow: 5px 7px 10px black; */
@@ -105,7 +109,7 @@
 }
 
 .buttons_title, .title, .summary, .genres {
-    margin-bottom: 10px;
+    margin-bottom: 0.714rem;
     color: white;
 }
 
@@ -155,11 +159,26 @@
 .runtime {
     z-index: 40;
     color: white;
-    font-size: 15px;
-    margin-left: 20px;
+    font-size: 1rem;
+    margin-left: 1rem;
 }
 
 .minutes {
-    font-size: 13px;
+    font-size: 0.85rem;
     margin-left: 3px;
+}
+
+@media (max-width: 900px) {
+    .hoverpage {
+        width: 90vw;
+    }
+
+    .videoPlayer {
+        height: calc(80vw / 16 * 9);
+    }
+
+    .coverImgWrap {
+        width: 22.222vw;
+        height: 33.333vw;
+    }
 }

@@ -36,13 +36,7 @@ html {
   }
 }
 
-@media (max-width: 1350px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 975px) {
+@media (max-width: 600px) {
   html {
     font-size: 10px;
   }
