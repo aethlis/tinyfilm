@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: center;
     font-family: "GMarket Normal";
+    z-index: 999;
     /* font-size: 0.833vw; */
 }
 
