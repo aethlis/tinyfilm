@@ -4,6 +4,8 @@
     background-color: white;
     max-height: 300px;
     transition: 0.2s;
+
+    cursor: pointer;
 }
 
 .text_box {
@@ -45,6 +47,8 @@
 .img_wrapper img {
     width: 140%;
     height: auto;
+
+    pointer-events: none;
 }
 
 @media (min-width: 1920px) {
@@ -96,4 +100,12 @@
 
 .text_box {
     color: black;
+}
+
+.coverImg::selection, .title::selection, .summary::selection {
+    background: transparent;
+}
+
+.coverImg, .title, .summary {
+    cursor: pointer;
 }
