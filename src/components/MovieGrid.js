@@ -25,7 +25,7 @@ function MovieGrid({id, summary, coverImg, title, genres, bgImg, runtime}) {
                 </div>
                 <div className={styles.text_box}>
                     <div className={styles.title}>{title}</div>
-                    <div className={styles.summary}>{summary.length > 130 ? `${summary.slice(0, 130)}...` : summary}</div>
+                    <div className={styles.summary}>{summary.length > 90 ? `${summary.slice(0, 90)}. . .` : summary}</div>
                 </div>
             </div>
         </div>
