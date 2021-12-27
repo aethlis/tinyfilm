@@ -6,10 +6,8 @@
     display: flex;
     justify-content: center;
     z-index: 50;
-    /* overflow-x: hidden; */
     overflow-y: scroll;
     top: 0;
-    /* background: rgba(0, 0, 0, 0.7); */
 }
 
 .filter {
@@ -20,6 +18,7 @@
 
     padding: 40vw;
     top: -20vw;
+    left: -20vw;
     /* background-color: orange; */
 }
 
