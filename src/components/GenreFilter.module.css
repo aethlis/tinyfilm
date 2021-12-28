@@ -1,6 +1,6 @@
 .genreFilter {
     /* width: calc(100vw - 210px); */
-    width: 88vw;
+    width: 90vw;
     height: fit-content;
     display: flex;
     flex-flow: column nowrap;
@@ -18,7 +18,7 @@
     width: fit-content;
     height: fit-content;
     flex-flow: row nowrap;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .selectors {
