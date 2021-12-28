@@ -187,7 +187,7 @@
     cursor: default;
 }
 
-.runtime::selection, .minutes::selection, .title::selection, .buttons_title::selection {
+.runtime::selection, .minutes::selection, .title::selection, .buttons_title::selection, .coverImgWrap img::selection {
     background: transparent;
 }
 
