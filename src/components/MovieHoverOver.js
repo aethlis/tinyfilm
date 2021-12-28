@@ -7,10 +7,11 @@ function HoverShow({id, coverImg, title, summary, genres, bgImg, runtime}) {
     const {setHIDE} = useHoverOver();
     return (
         <div className={styles.container}>
-            <div className={styles.filter} onClick={() => {
-                setHIDE(true)
-            }}></div>
+            <div className={styles.filter}></div>
             <div className={styles.hoverWrap} id={id}>
+                <div className={styles.bgClick} onClick={() => {
+                    setHIDE(true)
+                }}></div>
                 <div className={styles.hoverpage}>
                     <div className={styles.infoWrap}>
                         <div className={styles.videoPlayer} style={{backgroundImage: `url("${bgImg}")`}}>

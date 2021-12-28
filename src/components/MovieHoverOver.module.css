@@ -38,6 +38,12 @@
     z-index: 40;
 }
 
+.bgClick {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
 .hoverpage {
     width: 810px;
     height: fit-content;
