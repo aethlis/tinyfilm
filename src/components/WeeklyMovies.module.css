@@ -79,3 +79,11 @@ img {
     line-height: 25px;
     margin-top: 20px;
 }
+
+@media (max-width: 2560px) {
+    .left {
+        position: absolute;
+        right: 2000px;
+    }
+
+}
