@@ -1,0 +1,44 @@
+.genreFilter {
+    /* width: calc(100vw - 210px); */
+    width: 88vw;
+    height: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    /* background-color: orange; */
+}
+
+.moviesTitle {
+    font-size: 1.4rem;
+    font-family: "GMarket Normal";
+}
+
+.filters {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-flow: row nowrap;
+    margin-top: 1rem;
+}
+
+.selectors {
+    /* width: 100px; */
+    height: 2rem;
+    font-size: 1rem;
+    border: 0.1rem solid grey;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.genres, .budget {
+    /* margin-right: 2rem; */
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genres {
+    margin-right: 0.5rem;
+}

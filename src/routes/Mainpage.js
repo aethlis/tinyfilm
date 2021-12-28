@@ -8,6 +8,7 @@ import HoverShow from "../components/MovieHoverOver";
 import { useMovieAPI } from "../contexts/FetchAPI";
 import { useHoverOver } from "../contexts/HoverContext";
 import { useEffect } from "react";
+import GenreFilter from "../components/GenreFilter";
 // import { useContext } from 'react';
 
 function ContentAd() {
@@ -52,6 +53,9 @@ function Mainpage() {
                 <div className={styles.ContentAd_container}>
                     <ContentAd />
                 </div>
+                <div className={styles.filterWrapper}>
+                    <GenreFilter />
+                </div>
                 <div className={styles.movie_container}>
                     <div className={styles.movie_wrap}>
                         {movies.map((movie) => {
@@ -68,6 +72,10 @@ function Mainpage() {
                             )
                         })}
                     </div>
+                </div>
+
+                <div className={styles.footer}>
+                    
                 </div>
 
                 {!HIDE ? 
