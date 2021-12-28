@@ -20,7 +20,7 @@ function ContentAd() {
                     <div className={styles.title}>title</div>
                     <div className={styles.summary}>Just an expression of mind and soul, deep within a humans brain and heart.</div>
                     <div className={styles.buttonwrap}>
-                        <PlayButton/>
+                        <PlayButton />
                     </div>
                 </div>
             </div>
@@ -29,15 +29,15 @@ function ContentAd() {
 }
 
 function Mainpage() {
-    const {movies} = useMovieAPI();
-    const {ID, COVERIMG, BGIMG, HIDE, TITLE, SUMMARY, GENRES, RUNTIME} = useHoverOver();
+    const { movies } = useMovieAPI();
+    const { ID, COVERIMG, BGIMG, HIDE, TITLE, SUMMARY, GENRES, RUNTIME } = useHoverOver();
     const disableScroll = () => {
         const x = window.scrollX;
         const y = window.scrollY;
-        window.onscroll = function () {window.scrollTo(x, y);}
+        window.onscroll = function () { window.scrollTo(x, y); }
     }
     const enableScroll = () => {
-        window.onscroll = function () {}
+        window.onscroll = function () { }
     }
     useEffect(() => {
         if (HIDE !== true) {
@@ -74,9 +74,7 @@ function Mainpage() {
                     </div>
                 </div>
 
-                <div className={styles.footer}>
-                    
-                </div>
+                <div className={styles.footer}></div>
 
                 {!HIDE ? 
                     <HoverShow 
