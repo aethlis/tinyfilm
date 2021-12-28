@@ -16,6 +16,7 @@
 }
 
 .title {
+    margin: 0px 0.3rem;
     margin-top: 0.8rem;
     /* font-size: 1.071vw; */
     font-size: 1.1rem;
@@ -23,6 +24,7 @@
 }
 
 .summary {
+    margin: 0px 0.3rem;
     margin-top: 0.5rem;
     /* font-size: 0.833vw; */
     font-size: 1rem;
