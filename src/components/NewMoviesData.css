@@ -2,6 +2,16 @@
     position: fixed;
 } */
 
+img {
+    width: 300px;
+    height: 180px;
+}
+
+.imgDiv {
+    position: relative;
+    top: 110px;
+}
+
 .img1 {
     position: absolute;
     top: 0px;
@@ -39,8 +49,4 @@
     right: 60px;
     transform: rotate(10deg);
     z-index: 1;
-}
-
-.hidden {
-    display: none;
 }

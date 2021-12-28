@@ -1,6 +1,13 @@
-import { gsap } from "gsap";
+import { gsap } from "gsap/gsap-core";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useRef, useState } from "react";
 import "./NewMoviesData.css"
+// import Swiper from "swiper";
+// import "swiper/css";
+// import Swiper, { Navigation, Pagination } from 'swiper';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+
 
 function NewMoviesData({ backgroundImg1, backgroundImg2, backgroundImg3, backgroundImg4, backgroundImg5 }) {
     // const scrollY = window.scrollY
@@ -11,52 +18,23 @@ function NewMoviesData({ backgroundImg1, backgroundImg2, backgroundImg3, backgro
     const img3 = useRef();
     const img4 = useRef();
     const img5 = useRef();
-    const imgDiv = useRef();
 
-    const onWheel = () => {
-        gsap.to(imgDiv.current, {
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(img3.current, {
+            scrollTrigger: {
+                trigger: img3,
+                start: "-30px 10%",
+                markers: true,
+                toggleActions: "restart none none none",
+            },
             rotation: 360,
-        }, [imgDiv]);
-        // gsap.to(img1.current, {
-        //     rotation: 0,
-        //     x: 50,
-        //     y: 300,
-        //     duration: 1,
-        //     zIndex: 4,
-        // }, [img1]);
+            duration: 3,
+        });
+    }, [img3]);
 
-        // gsap.to(img2.current, {
-        //     rotation: 10,
-        //     x: 60,
-        //     y: 300,
-        //     duration: 1,
-        //     zIndex: 3,
-        // }, [img1]);
-
-        // gsap.to(img3.current, {
-        //     rotation: 10,
-        //     x: 70,
-        //     y: 300,
-        //     duration: 0,
-        //     zIndex: 2,
-        // })
-
-        // gsap.to(img4.current, {
-        //     display: "none",
-        //     opacity: 0,
-        //     y: 500,
-        //     duration: 0,
-        // })
-
-        // gsap.to(img5.current, {
-        //     display: "none",
-        //     opacity: 0,
-        //     y: 600,
-        //     duration: 0,
-        // })
-    }
     return (
-        <div onWheel={onWheel} ref={imgDiv}>
+        <div className="imgDiv">
             <div>
                 <img ref={img1} src={backgroundImg1} className="img1" />
             </div>
