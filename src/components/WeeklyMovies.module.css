@@ -1,0 +1,27 @@
+.WeeklyMovie1 {
+    position: absolute;
+    left: 225px;
+}
+
+img {
+    width: 430px;
+    height: 250px;
+}
+
+.WeeklyMovie1Img {
+    position: absolute;
+    top: 220px;
+}
+
+.WeeklyMovie1Title {
+    width: 125px;
+    position: absolute;
+    top: 500px;
+    font-size: 20px;
+}
+
+.WeeklyMovie1Intro {
+    width: 430px;
+    position: absolute;
+    top: 545px;
+}

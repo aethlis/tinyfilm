@@ -19,7 +19,7 @@ function Header() {
                     </div>
 
                     <div className={styles.linker}>
-                        <Link to={`/`}>
+                        <Link to={`/weekly`}>
                             <div className={styles.links} id={styles.linkTwo}>WEEKLY_픽</div>
                         </Link>
                     </div>

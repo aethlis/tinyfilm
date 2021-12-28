@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    /* background-image: url(../img/backgroundTexture.jpeg);
+    z-index: 99; */
+}
+
+.backgroundImg {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+        background-attachment: fixed;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 130px;
+    font-size: 60px;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+}
+
+.widthLine {
+    width: 1100px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+    position: relative;
+    top: 180px;
+}
+
+.heightLine {
+    width: 1px;
+    height: 1500px;
+    border-width: 1.8px;
+    border-style: solid;
+    border-color: gray;
+    background-color: gray;
+    position: absolute;
+    top: 250px;
+}
