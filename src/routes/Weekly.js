@@ -15,7 +15,7 @@ function Weekly() {
     // }, [movies[15]])
     return (
         <div>
-            <img src={backgroundTexture} className={styles.backgroundImg} />
+            {/* <img src={backgroundTexture} className={styles.backgroundImg} /> */}
             <Header />
             <div className={styles.intro}>
                 WEEKLY PICK
