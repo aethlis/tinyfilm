@@ -89,7 +89,8 @@
 
 .movie_wrap:hover {
     transform: scale(1.04);
-    box-shadow: 0px 5px 7px black;
+    /* box-shadow: 0px 5px 7px black; */
+    box-shadow: 0px 5px 7px rgb(66, 66, 66);
     border-radius: 5px;
     z-index: 1;
 }
