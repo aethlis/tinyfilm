@@ -1,6 +1,7 @@
-.WeeklyMovie1 {
+.left {
     position: absolute;
     left: 225px;
+    width: 430px;
 }
 
 img {
@@ -8,20 +9,73 @@ img {
     height: 250px;
 }
 
-.WeeklyMovie1Img {
+.weeklyMovie1Img {
     position: absolute;
     top: 220px;
 }
 
-.WeeklyMovie1Title {
+.weeklyMovie1Title {
     width: 125px;
     position: absolute;
     top: 500px;
     font-size: 20px;
 }
 
-.WeeklyMovie1Intro {
-    width: 430px;
+.weeklyMovie1Intro {
     position: absolute;
     top: 545px;
+    line-height: 25px;
+}
+
+.weeklyWatch {
+    position: absolute;
+    top: 1230px;
+}
+
+.weeklyWatchTitle {
+    width: 400px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.weeklyWatchContent {
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.right {
+    position: absolute;
+    width: 430px;
+    left: 795px;
+}
+
+.text {
+    position: absolute;
+    top: 220px;
+    line-height: 25px;
+}
+
+.weeklyPost {
+    position: absolute;
+    top: 840px;
+}
+
+.weeklyPostTitle {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.weeklyPostContent {
+    margin-top: 25px;
+}
+
+.weeklyMovie2Title {
+    width: 125px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.weeklyMovie2Intro {
+    line-height: 25px;
+    margin-top: 20px;
 }

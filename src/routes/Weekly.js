@@ -28,9 +28,12 @@ function Weekly() {
             </div>
             <div>
                 <WeeklyMovies
-                    WeeklyMovie1Img={movies[15].background_image}
-                    WeeklyMovie1Title={movies[15].title}
-                    WeeklyMovie1Intro={movies[15].summary}
+                    weeklyMovie1Img={movies[15].background_image}
+                    weeklyMovie1Title={movies[15].title}
+                    weeklyMovie1Intro={movies[15].summary}
+                    weeklyMovie2Img={movies[20].background_image}
+                    weeklyMovie2Title={movies[20].title}
+                    weeklyMovie2Intro={movies[20].summary}
                 />
             </div>
         </div>

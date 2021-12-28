@@ -7,8 +7,7 @@ body {
 .backgroundImg {
     position: absolute;
     width: 100vw;
-    height: auto;
-        background-attachment: fixed;
+    height: 2300px;
 }
 
 .intro {
