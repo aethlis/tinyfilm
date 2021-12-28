@@ -68,6 +68,7 @@ function Mainpage() {
                                     bgImg={movie.background_image_original}
                                     summary={movie.summary}
                                     runtime={movie.runtime}
+                                    genres={movie.genres}
                                 />
                             )
                         })}

@@ -7,7 +7,7 @@ function HoverShow({id, coverImg, title, summary, genres, bgImg, runtime}) {
     const {setHIDE} = useHoverOver();
     return (
         <div className={styles.container}>
-            <div className={styles.filter} onMouseUp={() => {
+            <div className={styles.filter} onClick={() => {
                 setHIDE(true)
             }}></div>
             <div className={styles.hoverWrap} id={id}>
@@ -32,9 +32,23 @@ function HoverShow({id, coverImg, title, summary, genres, bgImg, runtime}) {
                                 <img src={coverImg} alt={id} />
                             </div>
                             <div className={styles.info}>
-                                <div className={styles.title}>줄거리</div>
-                                <div className={styles.summary}>{summary}</div>
-                                <div className={styles.genres}>{genres}</div>
+                                <div className={styles.titleWrapper}>
+                                    <div className={styles.title}>줄거리</div>
+                                    <div className={styles.summary}>{summary}</div>
+                                </div>
+
+                                <div className={styles.titleWrapperTwo}>
+                                    <div className={styles.title}>제작의도</div>
+                                    <div className={styles.summary}>{summary}</div>
+                                    <div className={styles.genresWrapper}>
+                                        <div className={styles.genreList}>장르:</div>
+                                        {genres.map((genre) => {
+                                            return (
+                                                <div className={styles.genres}>{genre},</div>
+                                            )
+                                        })}
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
