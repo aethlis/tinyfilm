@@ -206,7 +206,17 @@
     }
 }
 
+@media (max-width: 600px) {
+    .hoverpage {
+        margin-top: 5.71428571rem;
+    }
+}
+
 @media (max-width: 375px) {
+    .hoverpage {
+        margin-top: 50px;
+    }
+
     .summary {
         font-size: 1.2rem;
     }
