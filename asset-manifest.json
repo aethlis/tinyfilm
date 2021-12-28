@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tinyfilm/static/css/main.e52b5e85.css",
+    "main.css": "/tinyfilm/static/css/main.f89219c5.css",
     "main.js": "/tinyfilm/static/js/main.a08cb353.js",
     "static/media/SF-Pro.ttf": "/tinyfilm/static/media/SF-Pro.cd57ae4c607f43b78b39.ttf",
     "static/media/GmarketSansTTFBold.ttf": "/tinyfilm/static/media/GmarketSansTTFBold.69428064ef8eee25be33.ttf",
@@ -11,11 +11,11 @@
     "index.html": "/tinyfilm/index.html",
     "static/media/closeBtn.svg": "/tinyfilm/static/media/closeBtn.0e06fa6441c8b9de5c167943196dd1bc.svg",
     "static/media/playBtn.svg": "/tinyfilm/static/media/playBtn.310b2fc9c6774794236ada3ea05d05df.svg",
-    "main.e52b5e85.css.map": "/tinyfilm/static/css/main.e52b5e85.css.map",
+    "main.f89219c5.css.map": "/tinyfilm/static/css/main.f89219c5.css.map",
     "main.a08cb353.js.map": "/tinyfilm/static/js/main.a08cb353.js.map"
   },
   "entrypoints": [
-    "static/css/main.e52b5e85.css",
+    "static/css/main.f89219c5.css",
     "static/js/main.a08cb353.js"
   ]
 }
