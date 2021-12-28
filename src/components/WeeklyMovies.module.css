@@ -51,7 +51,7 @@ img {
 
 .text {
     position: absolute;
-    top: 220px;
+    top: 215px;
     line-height: 25px;
 }
 
@@ -80,10 +80,10 @@ img {
     margin-top: 20px;
 }
 
-@media (max-width: 2560px) {
+/* @media (max-width: 2560px) {
     .left {
         position: absolute;
         right: 2000px;
     }
 
-}
+} */

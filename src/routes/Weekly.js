@@ -14,8 +14,8 @@ function Weekly() {
     //     console.log(movies[15].title);
     // }, [movies[15]])
     return (
-        <div>
-            {/* <img src={backgroundTexture} className={styles.backgroundImg} /> */}
+        <div className={styles.fullPage}>
+            <img src={backgroundTexture} className={styles.backgroundImg} />
             <Header />
             <div className={styles.intro}>
                 WEEKLY PICK
@@ -28,9 +28,9 @@ function Weekly() {
             </div>
             <div>
                 <WeeklyMovies
-                    weeklyMovie1Img={movies[15].background_image}
-                    weeklyMovie1Title={movies[15].title}
-                    weeklyMovie1Intro={movies[15].summary}
+                    weeklyMovie1Img={movies[14].background_image}
+                    weeklyMovie1Title={movies[14].title}
+                    weeklyMovie1Intro={movies[14].summary}
                     weeklyMovie2Img={movies[20].background_image}
                     weeklyMovie2Title={movies[20].title}
                     weeklyMovie2Intro={movies[20].summary}
