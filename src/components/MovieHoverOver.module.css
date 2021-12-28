@@ -110,12 +110,17 @@
 
 .info {
     width: calc(100% - 11.905vw);
-    margin-left: 1vw;
+    margin-left: 1.5vw;
 }
 
 .buttons_title, .title, .summary, .genres {
     margin-bottom: 0.714rem;
     color: white;
+}
+
+.summary {
+    font-size: 1rem;
+    word-break: keep-all;
 }
 
 .buttons_title {
@@ -197,5 +202,15 @@
     .coverImgWrap {
         width: 22.222vw;
         height: 33.333vw;
+    }
+}
+
+@media (max-width: 375px) {
+    .summary {
+        font-size: 1.2rem;
+    }
+
+    .title {
+        font-size: 1.6rem;
     }
 }

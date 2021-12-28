@@ -98,6 +98,12 @@ input:focus {
     outline: none;
 }
 
+/* @media (max-width: 414px) {
+    .links {
+        font-size: 10px;
+    }
+} */
+
 @media (max-width: 375px) {
     .header {
         height: 50px;
