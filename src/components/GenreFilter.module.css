@@ -11,6 +11,8 @@
 .moviesTitle {
     font-size: 1.4rem;
     font-family: "GMarket Normal";
+
+    cursor: default;
 }
 
 .filters {
@@ -43,4 +45,8 @@
 
 .genres {
     margin-right: 0.5rem;
+}
+
+.moviesTitle::selection {
+    background: transparent;
 }

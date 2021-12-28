@@ -105,7 +105,7 @@
     color: black;
 }
 
-.coverImg::selection, .title::selection, .summary::selection {
+.coverImg::selection, .title::selection, .summary::selection, .img_wrapper img::selection {
     background: transparent;
 }
 
