@@ -1,20 +1,7 @@
 body {
-    /* margin: 0;
-    background-image: url(../img/backgroundTexture.jpeg); */
-    /* background-attachment: fixed; */
-}
-
-/* .fullPage {
-    src: url(../img/backgroundTexture.jpeg);
-    width: 100vw;
-    height: 2500px;
-} */
-
-.backgroundImg {
-    position: absolute;
-    width: 100vw;
-    height: 2500px;
+    background-image: url(../img/backgroundTexture.jpeg);
     background-attachment: fixed;
+    height: 2500px;
 }
 
 .intro {
