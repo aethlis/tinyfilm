@@ -47,7 +47,7 @@
 .hoverpage {
     width: 810px;
     height: fit-content;
-    min-height: 1000px;
+    min-height: 500px;
     background-color: rgb(26, 26, 26);
     z-index: 60;
     margin-top: 80px;
@@ -93,6 +93,7 @@
     /* padding: 2.3rem; */
     display: flex;
     flex-flow: row nowrap;
+    margin-bottom: 10rem;
 }
 
 .coverImgWrap {
