@@ -1,89 +1,107 @@
+.container {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    /* margin-top: 80px; */
+}
+
+.box {
+    display: flex;
+    flex-flow: row nowrap;
+    /* width: 70vw; */
+    width: 1176px;
+    height: fit-content;
+}
+
 .left {
-    position: absolute;
-    left: 225px;
-    width: 430px;
-}
+    width: 50vw;
+    border-right: 1px solid grey;
+    border-top: 2px solid grey;
+    padding-right: 4vw;
+    padding-left: 2vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
 
-img {
-    width: 430px;
-    height: 250px;
-}
-
-.weeklyMovie1Img {
-    position: absolute;
-    top: 220px;
-}
-
-.weeklyMovie1Title {
-    width: 125px;
-    position: absolute;
-    top: 500px;
-    font-size: 20px;
-}
-
-.weeklyMovie1Intro {
-    position: absolute;
-    top: 545px;
-    line-height: 25px;
-}
-
-.weeklyWatch {
-    position: absolute;
-    top: 1230px;
-}
-
-.weeklyWatchTitle {
-    width: 400px;
-    font-size: 35px;
-    font-weight: 700;
-}
-
-.weeklyWatchContent {
-    margin-top: 20px;
-    line-height: 25px;
 }
 
 .right {
-    position: absolute;
-    width: 430px;
-    left: 795px;
+    width: 50vw;
+    border-left: 1px solid grey;
+    border-top: 2px solid grey;
+    padding-left: 4vw;
+    padding-right: 2vw;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+.weeklyMovie {
+    margin-bottom: 6rem;
+}
+
+.weeklyMovieImg {
+    /* position: absolute; */
+    /* top: 220px; */
+    width: 100%;
+    height: auto;
+}
+
+.weeklyMovieImg img {
+    width: 100%;
+    height: auto;
+}
+
+.weeklyMovieTitle {
+    /* position: absolute; */
+    /* top: 500px; */
+    font-size: 1.5rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+}
+
+.weeklyContent, .text {
+    /* position: absolute; */
+    /* top: 545px; */
+    line-height: 1.5rem;
+}
+
+.weeklyPWTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+}
+
+.weeklyWatchContent {
+    margin-top: 1.8rem;
+    line-height: 25px;
 }
 
 .text {
-    position: absolute;
-    top: 215px;
-    line-height: 25px;
-}
-
-.weeklyPost {
-    position: absolute;
-    top: 840px;
-}
-
-.weeklyPostTitle {
-    font-size: 35px;
-    font-weight: 700;
+    /* position: absolute; */
+    margin-bottom: 6rem;
 }
 
 .weeklyPostContent {
-    margin-top: 25px;
+    margin-top: 1.8rem;
 }
 
-.weeklyMovie2Title {
-    width: 125px;
-    margin-top: 25px;
-    font-size: 20px;
+@media (max-width: 1220px) {
+    .box {
+        width: 90vw;
+    }
 }
 
-.weeklyMovie2Intro {
-    line-height: 25px;
-    margin-top: 20px;
-}
-
-/* @media (max-width: 2560px) {
-    .left {
-        position: absolute;
-        right: 2000px;
+@media (max-width: 414px) {
+    .box {
+        flex-flow: column nowrap;
     }
 
-} */
+    .left, .right {
+        border: none;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.text, .weeklyContent {
+    word-break: break-all;
+}

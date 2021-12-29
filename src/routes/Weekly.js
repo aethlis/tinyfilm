@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import HeaderNoBG from "../components/HeaderNoBG"
 import styles from "./Weekly.module.css";
 import backgroundTexture from "../img/backgroundTexture.jpeg";
 import WeeklyMovies from "../components/WeeklyMovies";
@@ -15,25 +15,27 @@ function Weekly() {
     // }, [movies[15]])
     return (
         <div className={styles.fullPage}>
-            <Header />
-            <div className={styles.intro}>
-                WEEKLY PICK
-            </div>
-            <div className={styles.line}>
-                <div className={styles.widthLine}>
+            <HeaderNoBG />
+            <div className={styles.weeklyPickPage}>
+                <div className={styles.intro}>
+                    WEEKLY PICK
                 </div>
-                <div className={styles.heightLine}>
+                {/* <div className={styles.line}>
+                    <div className={styles.widthLine}>
+                    </div>
+                    <div className={styles.heightLine}>
+                    </div>
+                </div> */}
+                <div className={styles.weeklyMovies}>
+                    <WeeklyMovies
+                        weeklyMovie1Img={movies[14].background_image}
+                        weeklyMovie1Title={movies[14].title}
+                        weeklyMovie1Intro={movies[14].summary}
+                        weeklyMovie2Img={movies[20].background_image}
+                        weeklyMovie2Title={movies[20].title}
+                        weeklyMovie2Intro={movies[20].summary}
+                    />
                 </div>
-            </div>
-            <div>
-                <WeeklyMovies
-                    weeklyMovie1Img={movies[14].background_image}
-                    weeklyMovie1Title={movies[14].title}
-                    weeklyMovie1Intro={movies[14].summary}
-                    weeklyMovie2Img={movies[20].background_image}
-                    weeklyMovie2Title={movies[20].title}
-                    weeklyMovie2Intro={movies[20].summary}
-                />
             </div>
         </div>
     )

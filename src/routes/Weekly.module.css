@@ -1,16 +1,38 @@
-body {
+.weeklyPickPage {
+    display: flex;
     background-image: url(../img/backgroundTexture.jpeg);
     background-attachment: fixed;
-    height: 2500px;
+    height: fit-content;
+    flex-flow: column nowrap;
+    width: 100vw;
+    justify-content: center;
+    padding-bottom: 100px;
 }
 
 .intro {
+    /* top: 10rem; */
+    font-size: 4rem;
+    /* background: wheat; */
+    width: 100%;
+    height: fit-content;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.weeklyMovies {
+    width: 100vw;
+    height: fit-content;
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 130px;
-    font-size: 60px;
 }
+
+
+
+
+
+
+
 
 .line {
     display: flex;
@@ -33,6 +55,6 @@ body {
     border-style: solid;
     border-color: gray;
     background-color: gray;
-    position: absolute;
+    /* position: absolute; */
     top: 250px;
 }
