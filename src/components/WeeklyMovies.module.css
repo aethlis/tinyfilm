@@ -9,22 +9,21 @@ img {
     height: 250px;
 }
 
-.weeklyMovie1Img {
+.weeklyMovie1 {
     position: absolute;
-    top: 220px;
+    top: 215px;
 }
 
 .weeklyMovie1Title {
     width: 125px;
-    position: absolute;
-    top: 500px;
     font-size: 20px;
+    margin-top: 30px;
 }
 
 .weeklyMovie1Intro {
-    position: absolute;
-    top: 545px;
     line-height: 25px;
+    text-align: justify;
+    margin-top: 20px;
 }
 
 .weeklyWatch {
@@ -41,6 +40,7 @@ img {
 .weeklyWatchContent {
     margin-top: 20px;
     line-height: 25px;
+    text-align: justify;
 }
 
 .right {
@@ -51,13 +51,14 @@ img {
 
 .text {
     position: absolute;
-    top: 215px;
+    top: 210px;
     line-height: 25px;
+    text-align: justify;
 }
 
 .weeklyPost {
     position: absolute;
-    top: 840px;
+    top: 835px;
 }
 
 .weeklyPostTitle {
@@ -78,12 +79,113 @@ img {
 .weeklyMovie2Intro {
     line-height: 25px;
     margin-top: 20px;
+    text-align: justify;
 }
 
-/* @media (max-width: 2560px) {
-    .left {
-        position: absolute;
-        right: 2000px;
+@media (min-width: 2560px){
+    img {
+        width: 800px;
+        height: 450px;
     }
 
-} */
+    .left {
+        left: 390px;
+    }
+
+    .weeklyMovie1 {
+        top: 310px;
+    }
+
+    .weeklyMovie1Title {
+        width: 300px;
+        font-size: 40px;
+    }
+
+    .weeklyMovie1Intro {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .weeklyWatch {
+        top: 1500px;
+    }
+
+    .weeklyWatchTitle {
+        width: 800px;
+        font-size: 55px;
+    }
+
+    .weeklyWatchContent {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .right {
+        left: 1390px;
+    }
+
+    .text {
+        top: 304px;
+        font-size: 20px;
+        line-height: 30px;
+        width: 800px;
+    }
+
+    .weeklyPost {
+        position: absolute;
+        top: 885px;
+    }
+
+    .weeklyPostTitle {
+        font-size: 55px;
+    }
+
+    .weeklyMovie2Title {
+        font-size: 40px;
+    }
+
+    .weeklyMovie2Intro {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width:1024px) {
+    img {
+        width: 390px;
+        height: 230px;
+    }
+
+    .left {
+        left: 87px;
+    }
+
+    .weeklyMovie1Title {
+        width: 500px;
+        font-size: 35px;
+    }
+
+    .weeklyMovie1Intro {
+        font-size: 18px;
+        line-height: 30px;
+        width: 385px;
+    }
+
+    .weeklyWatch {
+        top: 1700px;
+        width: 385px;
+    }
+
+    .weeklyWatchTitle {
+        font-size: 35px;
+    }
+
+    .weeklyWatchContent {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .right {
+        left: 200px;
+    }
+}
