@@ -7,6 +7,7 @@ function GenreFilter() {
             <div className={styles.filters}>
                 <div className={styles.genres}>
                     <select className={styles.selectors}>
+                        <option className={styles.Options} value="All">전체</option>
                         <option className={styles.Options} value="Action">액션</option>
                         <option className={styles.Options} value="Comedy">코미디</option>
                         <option className={styles.Options} value="Drama">드라마</option>
@@ -19,6 +20,7 @@ function GenreFilter() {
                 </div>
                 <div className={styles.budget}>
                     <select className={styles.selectors}>
+                        <option className={styles.Options} value="BudgetAll">전체</option>
                         <option className={styles.Options} value="500">5백만원 이하</option>
                         <option className={styles.Options} value="500">5백만원 ~ 천만원</option>
                         <option className={styles.Options} value="500">천만원 ~ 5천만원</option>

@@ -20,12 +20,6 @@ function Weekly() {
                 <div className={styles.intro}>
                     WEEKLY PICK
                 </div>
-                {/* <div className={styles.line}>
-                    <div className={styles.widthLine}>
-                    </div>
-                    <div className={styles.heightLine}>
-                    </div>
-                </div> */}
                 <div className={styles.weeklyMovies}>
                     <WeeklyMovies
                         weeklyMovie1Img={movies[14].background_image}
