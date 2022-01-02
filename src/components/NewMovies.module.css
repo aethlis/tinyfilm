@@ -1,13 +1,4 @@
-body {
-    margin: 0;
-}
-
-img {
-    width: 380px;
-    height: 220px;
-}
-
-h1 {
-    position: relative;
-    top: 250px;
+.img {
+    width: 350px;
+    height: 200px;
 }

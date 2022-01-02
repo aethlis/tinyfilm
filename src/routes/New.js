@@ -12,19 +12,12 @@ function New() {
         <div>
             <Header />
             <NewMovies
-                movie1={movies[0]}
-                movie2={movies[1]}
-                movie3={movies[2]}
-                movie4={movies[3]}
-                movie5={movies[4]}
+                movie1={movies[0].background_image}
+                movie2={movies[1].background_image}
+                movie3={movies[2].background_image}
+                movie4={movies[3].background_image}
+                movie5={movies[4].background_image}
             />
-            {/* {movies.map((newMovies) => (
-                <NewMovies
-                    backgroundImg={newMovies.background_image}
-                    key={newMovies.id}
-                    index={movies.indexOf(newMovies)}
-                />
-            ))} */}
         </div >
     );
 }
