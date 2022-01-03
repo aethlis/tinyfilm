@@ -115,4 +115,17 @@
     .weeklyMovieImg {
         height: calc(84vw / 16 * 9);
     }
+
+    .weeklyPWTitle {
+        font-size: 20px;
+    }
+
+    .weeklyContent, .text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .weeklyMovieTitle {
+        font-size: 25px;
+    }
 }
