@@ -43,11 +43,13 @@ function HoverShow({id, coverImg, title, summary, genres, bgImg, runtime}) {
                                     <div className={styles.summary}>{summary}</div>
                                     <div className={styles.genresWrapper}>
                                         <div className={styles.genreList}>장르:</div>
-                                        {genres.map((genre) => {
-                                            return (
-                                                <div className={styles.genres}>{genre},</div>
-                                            )
-                                        })}
+                                        <div className={styles.genreBox}>
+                                            {genres.map((genre) => {
+                                                return (
+                                                    <div className={styles.genres}>{genre},</div>
+                                                )
+                                            })}
+                                        </div>
                                     </div>
                                 </div>
                             </div>

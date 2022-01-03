@@ -151,6 +151,7 @@
 
 .titleWrapperTwo {
     margin-top: 2rem;
+    width: 100%;
 }
 
 /* .title {
@@ -161,20 +162,25 @@
 .genreList {
     font-family: "GMarket Bold";
     color: grey;
+    width: 3.5rem;
+}
 
+.genreBox {
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .genresWrapper {
     display: flex;
     flex-flow: row nowrap;
     margin-top: 1.4rem;
+    width: 100%;
 }
 
 .genres {
-    margin-left: 0.8rem;
+    margin-right: 0.8rem;
     color: grey;
     font-style: italic;
-
 }
 
 .buttons {
