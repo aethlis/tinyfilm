@@ -278,11 +278,13 @@
         min-height: 100vh;
         max-height: fit-content;
         margin: 0;
+        overflow: visible;
     }
 
     .videoPlayer {
         height: calc(90vw / 16 * 9);
         position: fixed;
+        top: 0;
     }
 
     .infoBox {
