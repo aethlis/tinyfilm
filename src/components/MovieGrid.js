@@ -9,7 +9,7 @@ function MovieGrid({id, summary, coverImg, title, genres, bgImg, runtime}) {
     const {setID, setCOVERIMG, setHIDE, setTITLE, setSUMMARY, setGENRES, setBGIMG, setRUNTIME} = useHoverOver();
     // const {context} = useContext(FetchAPI)
     return (
-        <div className={styles.movie_wrap} id={id}>
+        <div className={styles.movie_wrap} id={id} key={id}>
             <div className={styles.functionElement} onClick={() => {
                 setID(id)
                 setCOVERIMG(coverImg)

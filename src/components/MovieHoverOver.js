@@ -6,7 +6,7 @@ import CloseButton from './CloseBtn';
 function HoverShow({id, coverImg, title, summary, genres, bgImg, runtime}) {
     const {setHIDE} = useHoverOver();
     return (
-        <div className={styles.container}>
+        <div className={styles.container} key={id}>
             <div className={styles.filter}></div>
             <div className={styles.hoverWrap} id={id}>
                 <div className={styles.bgClick} onClick={() => {

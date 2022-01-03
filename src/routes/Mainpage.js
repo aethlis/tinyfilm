@@ -34,7 +34,7 @@ function Mainpage() {
     const disableScroll = () => {
         const x = window.scrollX;
         const y = window.scrollY;
-        window.onscroll = function () { window.scrollTo(x, y); }
+        window.onscroll = function () { window.scrollTo(x, y) }
     }
     const enableScroll = () => {
         window.onscroll = function () { }
