@@ -1,9 +1,16 @@
-.weeklyPickPage {
-    display: flex;
+.fullPage {
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
     background-image: url(../img/backgroundTexture.jpeg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+}
+
+.weeklyPickPage {
+    background: transparent;
+    display: flex;
     height: fit-content;
     flex-flow: column nowrap;
     width: 100vw;

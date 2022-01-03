@@ -4,6 +4,11 @@
     height: fit-content;
 }
 
+.mainpageItem {
+    width: 100%;
+    height: fit-content;
+}
+
 .ContentAd_container {
     width: 100vw;
     height: fit-content;
@@ -133,6 +138,10 @@
 }
 
 @media (max-width: 414px) {
+    .movie_wrap {
+        grid-column-gap: 1.3rem;
+    }
+
     .ContentAd {
         height: calc(100vw / 16 * 9 - 5.71428571rem * 2 + 38.5px);
         /* height: 2000px; */
@@ -167,4 +176,21 @@
     width: 100vw;
     height: 21rem;
     background-color: black;
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    scrollbar-width: 0px;
+} */
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }

@@ -16,6 +16,8 @@ export function HoverOverProvider({children}) {
     const [GENRES, setGENRES] = useState([])
     const [RUNTIME, setRUNTIME] = useState("")
 
+    const [TOGGLENONE, setNone] = useState(false)
+
     // useEffect(() => {
     //     setID()
     //     setCOVERIMG()
@@ -24,7 +26,7 @@ export function HoverOverProvider({children}) {
     //     setGENRES()
     // }, []);
     return (
-        <HoverOver.Provider value={{ID, COVERIMG, BGIMG, HIDE, TITLE, SUMMARY, GENRES, RUNTIME, setRUNTIME, setID, setCOVERIMG, setBGIMG, setHIDE, setTITLE, setSUMMARY, setGENRES}}>
+        <HoverOver.Provider value={{TOGGLENONE, ID, COVERIMG, BGIMG, HIDE, TITLE, SUMMARY, GENRES, RUNTIME, setNone, setRUNTIME, setID, setCOVERIMG, setBGIMG, setHIDE, setTITLE, setSUMMARY, setGENRES}}>
             {children}
         </HoverOver.Provider>
     )

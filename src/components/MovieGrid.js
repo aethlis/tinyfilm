@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { useHoverOver } from "../contexts/HoverContext";
 
 function MovieGrid({id, summary, coverImg, title, genres, bgImg, runtime}) {
-    const {setID, setCOVERIMG, setHIDE, setTITLE, setSUMMARY, setGENRES, setBGIMG, setRUNTIME} = useHoverOver();
+    const {setNone, setID, setCOVERIMG, setHIDE, setTITLE, setSUMMARY, setGENRES, setBGIMG, setRUNTIME} = useHoverOver();
     // const {context} = useContext(FetchAPI)
     return (
         <div className={styles.movie_wrap} id={id} key={id}>
@@ -19,6 +19,7 @@ function MovieGrid({id, summary, coverImg, title, genres, bgImg, runtime}) {
                 setGENRES(genres)
                 setBGIMG(bgImg)
                 setRUNTIME(runtime)
+                setNone(true)
             }}>
                 <div className={styles.img_wrapper}>
                     <img id={styles.coverImg} src={coverImg} alt={id} />

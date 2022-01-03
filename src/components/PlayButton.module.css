@@ -26,3 +26,17 @@
 .playBtn div::selection, .arrowItem::selection {
     background: transparent;
 }
+
+@media (max-width: 414px) {
+    .playBtn {
+        width: 57px;
+        height: 27px;
+        padding: 0;
+        font-size: 11px;
+    }
+
+    .arrowItem {
+        width: 7px;
+        height: 9px;
+    }
+}

@@ -48,7 +48,6 @@
 
 #linkTwo {
     font-weight: lighter;
-    width: 6.25rem;
     text-align: center;
 }
 
@@ -98,14 +97,32 @@ input:focus {
     outline: none;
 }
 
-/* @media (max-width: 414px) {
+@media (max-width: 414px) {
     .links {
-        font-size: 10px;
+        font-size: 11px;
     }
-} */
+}
 
 @media (max-width: 375px) {
     .header {
         height: 50px;
+    }
+
+    #linkTwo {
+        width: 10rem;
+    }
+
+    .linker {
+        margin-left: 1.3rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        height: 50px;
+    }
+
+    #linkTwo {
+        width: 9rem;
     }
 }
