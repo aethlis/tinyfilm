@@ -111,4 +111,8 @@
         padding: 0;
         width: 100%;
     }
+
+    .weeklyMovieImg {
+        height: calc(84vw / 16 * 9);
+    }
 }
