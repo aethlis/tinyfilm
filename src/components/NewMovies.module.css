@@ -5,10 +5,17 @@ img {
 
 .fullPage {
     position: fixed;
+    position: relative;
 }
 
 .imgDiv {
     margin-top: 6.7rem;
     height: 700px;
     overflow: scroll;
+    position: absolute;
+    right: 0;
+}
+
+.movie5 {
+    margin-top: 2rem;
 }
