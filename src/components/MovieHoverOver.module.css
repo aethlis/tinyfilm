@@ -269,7 +269,7 @@
 @media (max-width: 414px) {
     .hoverpage {
         width: 100vw;
-        min-height: 200vw;
+        min-height: 100vh;
         max-height: fit-content;
         margin: 0;
     }

@@ -31,13 +31,17 @@ function ContentAd() {
 function Mainpage() {
     const { movies } = useMovieAPI();
     const { ID, COVERIMG, BGIMG, HIDE, TITLE, SUMMARY, GENRES, RUNTIME } = useHoverOver();
+
+    const body = document.querySelector("body")
     const disableScroll = () => {
         const x = window.scrollX;
         const y = window.scrollY;
         window.onscroll = function () { window.scrollTo(x, y) }
+        body.style.overflowX = "hidden"
     }
     const enableScroll = () => {
         window.onscroll = function () { }
+        body.style.overflowX = "visible"
     }
     useEffect(() => {
         if (HIDE !== true) {
@@ -49,7 +53,7 @@ function Mainpage() {
     return (
         <div>
             <Header />
-            <div className={styles.fullpage}>
+            <div className={styles.fullpage} style={HIDE ? {overflowX: "auto"} : {overflowX: "hidden"}}>
                 <div className={styles.ContentAd_container}>
                     <ContentAd />
                 </div>
@@ -78,7 +82,7 @@ function Mainpage() {
                 <div className={styles.footer}></div>
 
                 {!HIDE ? 
-                    <HoverShow 
+                    <HoverShow
                         id={ID}
                         title={TITLE}
                         coverImg={COVERIMG}
