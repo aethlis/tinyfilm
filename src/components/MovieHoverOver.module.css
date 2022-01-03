@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     z-index: 99;
-    overflow-y: scroll;
+    overflow: scroll;
     top: 0;
 }
 
@@ -35,13 +35,14 @@
     display: flex;
     justify-content: center;
     /* background: rgba(0, 0, 0, 0.7); */
+    overflow: hidden;
     z-index: 40;
 }
 
 .bgClick {
     width: 100vw;
-    height: 100vh;
-    position: fixed;
+    height: 100%;
+    position: absolute;
 }
 
 .hoverpage {
