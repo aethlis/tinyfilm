@@ -41,7 +41,3 @@ img {
     transform: rotate(10deg);
     z-index: 99;
 }
-
-.title {
-    font-size: 300px;
-}
