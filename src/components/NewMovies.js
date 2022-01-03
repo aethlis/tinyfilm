@@ -6,15 +6,16 @@ function NewMovies({ movie1Img, movie2Img, movie3Img, movie4Img, movie5Img, movi
     const img2 = useRef(null);
     const img5 = useRef(null);
     useEffect(() => {
-        gsap.to("#img5", {
+        gsap.to(img5.current, {
             x: 100,
             duration: 2,
             opacity: 1,
             scrollTrigger: {
-                trigger: "#img5",
+                trigger: img5,
                 markers: true,
                 start: "top",
                 end: "bottom",
+                toggleActions: "restart none none none",
             },
         })
     }, []);
@@ -34,7 +35,7 @@ function NewMovies({ movie1Img, movie2Img, movie3Img, movie4Img, movie5Img, movi
                     <img src={movie4Img} />
                 </div>
                 <div>
-                    <img src={movie5Img} id={img5} />
+                    <img src={movie5Img} ref={img5} />
                 </div>
             </div>
         </div>
