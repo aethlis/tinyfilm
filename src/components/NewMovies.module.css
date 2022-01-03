@@ -3,41 +3,12 @@ img {
     height: 200px;
 }
 
-.img1 {
-    position: absolute;
-    top: 0px;
-    right: 60px;
-    transform: rotate(-10deg);
-    z-index: 99;
+.fullPage {
+    position: fixed;
 }
 
-.img2 {
-    position: absolute;
-    top: 150px;
-    right: 90px;
-    transform: rotate(-10deg);
-    z-index: 100;
-}
-
-.img3 {
-    position: absolute;
-    top: 300px;
-    right: 130px;
-    z-index: 101;
-}
-
-.img4 {
-    position: absolute;
-    top: 450px;
-    right: 90px;
-    transform: rotate(10deg);
-    z-index: 100;
-}
-
-.img5 {
-    position: absolute;
-    top: 600px;
-    right: 60px;
-    transform: rotate(10deg);
-    z-index: 99;
+.imgDiv {
+    margin-top: 6.7rem;
+    height: 700px;
+    overflow: scroll;
 }

@@ -1,7 +1,9 @@
 .weeklyPickPage {
     display: flex;
     background-image: url(../img/backgroundTexture.jpeg);
+    background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     height: fit-content;
     flex-flow: column nowrap;
     width: 100vw; 
