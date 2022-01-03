@@ -28,3 +28,9 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 414px) {
+    .intro {
+        font-size: 3rem;
+    }
+}
