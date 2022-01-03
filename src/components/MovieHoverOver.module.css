@@ -296,11 +296,17 @@
         margin-left: 5px;
     }
 
+    .buttons_title {
+        font-size: 16px;
+    }
+
     .summary {
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
+        font-size: 12px;
     }
 
     .title {
-        font-size: 1.6rem;
+        /* font-size: 1.6rem; */
+        font-size: 15px;
     }
 }
