@@ -20,7 +20,7 @@ function WeeklyMovies({ weeklyMovie1Img, weeklyMovie1Title, weeklyMovie1Intro, w
                     </div>
                     <div className={styles.weeklyWatch}>
                         <div className={styles.weeklyPWTitle}>
-                            {`WEEKLY WATCH`}
+                            {`<WEEKLY WATCH>`}
                         </div>
                         <div className={styles.weeklyContent}>
                             {`
@@ -41,7 +41,7 @@ function WeeklyMovies({ weeklyMovie1Img, weeklyMovie1Title, weeklyMovie1Intro, w
                     </div>
                     <div className={styles.weeklyPost}>
                         <div className={styles.weeklyPWTitle}>
-                            {`WEEKLY POST`}
+                            {`<WEEKLY POST>`}
                         </div>
                         <div className={styles.weeklyPostContent}>
                             <div className={styles.weeklyMovieImg}>
