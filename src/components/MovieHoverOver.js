@@ -4,13 +4,14 @@ import PlayButton from './PlayButton';
 import CloseButton from './CloseBtn';
 
 function HoverShow({id, coverImg, title, summary, genres, bgImg, runtime}) {
-    const {setHIDE} = useHoverOver();
+    const {setHIDE, setNone} = useHoverOver();
     return (
         <div className={styles.container} key={id}>
             <div className={styles.filter}></div>
             <div className={styles.hoverWrap} id={id}>
                 <div className={styles.bgClick} onClick={() => {
                     setHIDE(true)
+                    setNone(false)
                 }}></div>
                 <div className={styles.hoverpage}>
                     <div className={styles.infoWrap}>

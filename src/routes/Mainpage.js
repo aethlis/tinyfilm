@@ -7,7 +7,7 @@ import MovieGrid from "../components/MovieGrid";
 import HoverShow from "../components/MovieHoverOver";
 import { useMovieAPI } from "../contexts/FetchAPI";
 import { useHoverOver } from "../contexts/HoverContext";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import GenreFilter from "../components/GenreFilter";
 // import { useContext } from 'react';
 
@@ -30,7 +30,7 @@ function ContentAd() {
 
 function Mainpage() {
     const { movies } = useMovieAPI();
-    const { ID, COVERIMG, BGIMG, HIDE, TITLE, SUMMARY, GENRES, RUNTIME } = useHoverOver();
+    const { TOGGLENONE, ID, COVERIMG, BGIMG, HIDE, TITLE, SUMMARY, GENRES, RUNTIME } = useHoverOver();
 
     const body = document.querySelector("body")
     const disableScroll = () => {
@@ -43,6 +43,7 @@ function Mainpage() {
         window.onscroll = function () { }
         body.style.overflowX = "visible"
     }
+
     useEffect(() => {
         if (HIDE !== true) {
             disableScroll()
@@ -50,36 +51,38 @@ function Mainpage() {
             enableScroll()
         }
     }, [HIDE]);
+    
     return (
         <div>
             <Header />
-            <div className={styles.fullpage} style={HIDE ? {overflowX: "auto"} : {overflowX: "hidden"}}>
-                <div className={styles.ContentAd_container}>
-                    <ContentAd />
-                </div>
-                <div className={styles.filterWrapper}>
-                    <GenreFilter />
-                </div>
-                <div className={styles.movie_container}>
-                    <div className={styles.movie_wrap}>
-                        {movies.map((movie) => {
-                            return (
-                                <MovieGrid
-                                    key={movie.id}
-                                    id={movie.id}
-                                    title={movie.title}
-                                    coverImg={movie.large_cover_image}
-                                    bgImg={movie.background_image_original}
-                                    summary={movie.summary}
-                                    runtime={movie.runtime}
-                                    genres={movie.genres}
-                                />
-                            )
-                        })}
+            <div className={styles.fullpage} style={HIDE ? {overflowX: "auto"} : {overflowX: "hidden"}}>    
+                <div className={styles.mainpageItem}>
+                    <div className={styles.ContentAd_container}>
+                        <ContentAd />
                     </div>
+                    <div className={styles.filterWrapper}>
+                        <GenreFilter />
+                    </div>
+                    <div className={styles.movie_container}>
+                        <div className={styles.movie_wrap}>
+                            {movies.map((movie) => {
+                                return (
+                                    <MovieGrid
+                                        key={movie.id}
+                                        id={movie.id}
+                                        title={movie.title}
+                                        coverImg={movie.large_cover_image}
+                                        bgImg={movie.background_image_original}
+                                        summary={movie.summary}
+                                        runtime={movie.runtime}
+                                        genres={movie.genres}
+                                    />
+                                )
+                            })}
+                        </div>
+                    </div>
+                    <div className={styles.footer}></div>
                 </div>
-
-                <div className={styles.footer}></div>
 
                 {!HIDE ? 
                     <HoverShow
