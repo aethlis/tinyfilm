@@ -275,12 +275,12 @@
     }
 
     .videoPlayer {
-        height: calc(80vw / 16 * 9);
+        height: calc(90vw / 16 * 9);
         position: fixed;
     }
 
     .infoBox {
-        margin-top: calc(85vw / 16 * 9);
+        margin-top: calc(95vw / 16 * 9);
     }
 
     .info {
