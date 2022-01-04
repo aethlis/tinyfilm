@@ -53,7 +53,7 @@
 }
 
 .weeklyMovieImg img {
-    width: 100%;
+    width: 105%;
     height: auto;
 }
 
@@ -97,7 +97,7 @@
         width: 90vw;
     }
     .weeklyMovieImg {
-        height: calc(36.705vw / 16 * 9);
+        height: calc(34vw / 16 * 9);
     }
 }
 

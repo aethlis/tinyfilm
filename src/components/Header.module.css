@@ -40,6 +40,13 @@
     font-size: 1rem;
     width: fit-content;
     height: fit-content;
+
+    transition: 0.5s;
+}
+
+.links:hover {
+    transform: scale(1.1);
+    text-shadow: 0px 1px 2px black;
 }
 
 #linkOne {
@@ -66,6 +73,9 @@
     width: fit-content;
     height: fit-content;
     /* margin-left: 1.726vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .searchWrap {
