@@ -51,7 +51,7 @@ section {
     scroll-snap-type: y mandatory;
 }
 
-.hihi {
+/* .hihi {
     position: absolute;
     top: 0;
     width: 100vw;
@@ -60,4 +60,4 @@ section {
     z-index: 99;
     color: white;
     font-size: 200px;
-}
+} */

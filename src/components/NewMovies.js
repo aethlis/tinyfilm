@@ -16,6 +16,9 @@ function NewMovies({ movie1Img, movie2Img, movie3Img, movie4Img, movie5Img, movi
 
     const bGMovie1 = useRef();
     const bGMovie2 = useRef();
+    const bGMovie3 = useRef();
+    const bGMovie4 = useRef();
+    const bGMovie5 = useRef();
 
     useEffect(() => {
         gsap.to(movie2.current, {
@@ -23,6 +26,15 @@ function NewMovies({ movie1Img, movie2Img, movie3Img, movie4Img, movie5Img, movi
             scrollTrigger: {
                 markers: true,
                 trigger: bGMovie2.current,
+                toggleActions: "restart none reverse none"
+            },
+        })
+        gsap.to(movie3.current, {
+            y: -510,
+            scrollTrigger: {
+                markers: true,
+                trigger: bGMovie3.current,
+                toggleActions: "restart none reverse none"
             },
         })
     }, [])
@@ -38,13 +50,13 @@ function NewMovies({ movie1Img, movie2Img, movie3Img, movie4Img, movie5Img, movi
                         <img src={movie2Img} ref={bGMovie2} />
                     </section>
                     <section>
-                        <img src={movie3Img} />
+                        <img src={movie3Img} ref={bGMovie3} />
                     </section>
                     <section>
-                        <img src={movie4Img} />
+                        <img src={movie4Img} ref={bGMovie4} />
                     </section>
                     <section>
-                        <img src={movie5Img} />
+                        <img src={movie5Img} ref={bGMovie5} />
                     </section>
                 </div>
                 <div className={styles.bGB}></div>
@@ -66,7 +78,7 @@ function NewMovies({ movie1Img, movie2Img, movie3Img, movie4Img, movie5Img, movi
                     </section>
                 </div>
             </div>
-            <div className={styles.hihi}>구현이 덜 되었어요..아이구 미안합니다 ^^</div>
+            {/* <div className={styles.hihi}>구현이 덜 되었어요..아이구 미안합니다 ^^</div> */}
         </div>
     );
 }

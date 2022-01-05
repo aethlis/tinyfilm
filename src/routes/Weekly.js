@@ -21,12 +21,12 @@ function Weekly() {
             <HeaderNoBG />
             {!VIEWER ? (
                 <div className={styles.paperBG}></div>
-            ) : null }
+            ) : null}
             {VIEWER ? (
                 <div className={styles.SearchResultContainer}>
                     <SearchResult />
                 </div>
-            ) : null }
+            ) : null}
             {!VIEWER ? (
                 <div className={styles.weeklyPickPage}>
                     <div className={styles.intro}>
@@ -43,7 +43,7 @@ function Weekly() {
                         />
                     </div>
                 </div>
-            ) : null }
+            ) : null}
         </div>
     )
 }
