@@ -51,7 +51,7 @@
 
 .movieContent {
     margin-top: 17rem;
-    margin-left: 26rem;
+    margin-left: 23rem;
     color: white;
     display: flex;
     align-items: center;
@@ -99,6 +99,34 @@
     top: 234.6rem;
     width: 100vw;
     height: 821px;
+}
+
+.scrollBar {
+    position: absolute;
+    position: fixed;
+    top: 11.5rem;
+    right: 8rem;
+    z-index: 11;
+    border-style: solid;
+    height: 37rem;
+    border-width: 1px;
+    border-color: white;
+}
+
+.pageBtn {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -14px;
+    border-style: solid;
+    z-index: 12;
+    background-color: black;
+}
+
+.pageBtn2 {
+    position: absolute;
+    margin-top: 5rem;
 }
 
 

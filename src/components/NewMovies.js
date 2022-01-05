@@ -27,7 +27,7 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                 trigger: movie2Data.current,
                 start: "40% 70%",
                 end: "bottom 100%",
-                // toggleActions: "restart pause resume none"
+                toggleActions: "play pause resume reset",
                 // markers: true,
             }
         })
@@ -38,6 +38,7 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                 trigger: movie3Data.current,
                 start: "40% 70%",
                 end: "bottom 100%",
+                toggleActions: "play pause resume reset",
                 // markers: true,
             }
         })
@@ -48,6 +49,7 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                 trigger: movie4Data.current,
                 start: "40% 70%",
                 end: "bottom 100%",
+                toggleActions: "play pause resume reset",
                 // markers: true,
             }
         })
@@ -58,6 +60,7 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                 trigger: movie5Data.current,
                 start: "40% 70%",
                 end: "bottom 100%",
+                // toggleActions: "play pause resume reset",
                 // markers: true,
             }
         })
@@ -163,7 +166,8 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                         </div>
                     </div>
                 </div>
-            </div><div className={styles.movie5Data} ref={movie5Data}>
+            </div>
+            <div className={styles.movie5Data} ref={movie5Data}>
                 <div className={styles.movieContent}>
                     <div className={styles.moviePoster}>
                         <img src={movie5Poster} />
@@ -181,6 +185,15 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                             러닝타임{movie5RunTime}분
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className={styles.scrollBar}>
+                <div className={styles.pageBtn}>
+                    <div className={styles.pageBtn1}></div>
+                    <div className={styles.pageBtn2}></div>
+                    <div className={styles.pageBtn3}></div>
+                    <div className={styles.pageBtn4}></div>
+                    <div className={styles.pageBtn5}></div>
                 </div>
             </div>
         </div>
