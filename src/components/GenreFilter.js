@@ -12,7 +12,7 @@ function GenreFilter() {
             <div className={styles.moviesTitle}>Movies</div>
             <div className={styles.filters}>
                 <div className={styles.genres}>
-                    <select className={styles.selectors} name="genre" defa>
+                    <select className={styles.selectors} name="genre">
                         <option className={styles.Options} value="movies">전체</option>
                         <option className={styles.Options} value="action">액션</option>
                         <option className={styles.Options} value="comedy">코미디</option>
