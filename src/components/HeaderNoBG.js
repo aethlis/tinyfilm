@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import blackBrandLogo from "../img/blackBrandLogo.svg"
 import styles from "./HeaderNoBG.module.css"
+import SearchBar from "./Search"
 
 function HeaderNoBG() {
-    const disableSubmit = (event) => {
-        event.preventDefault()
-    }
     return (
         <div className={styles.header}>
             <div className={styles.container}>
@@ -30,11 +28,7 @@ function HeaderNoBG() {
                         </Link>
                     </div>
                 </div>
-                <div className={styles.searchWrap}>
-                    <form onSubmit={disableSubmit}>
-                        <input className={styles.searchBar} type="text" placeholder="search..." />
-                    </form>
-                </div>
+                <SearchBar/>
             </div>
         </div>
     )

@@ -1,0 +1,25 @@
+.searchWrap {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.searchBar {
+    border: #7F7F7F solid 0.142rem;
+    /* border: black solid 2px; */
+    border-radius: calc(133px / 2);
+    width: 9.5rem;
+    /* width: 7.917vw; */
+    height: 1.55rem;
+    /* height: 1.369vw; */
+    padding-left: 0.714rem;
+    background: transparent;
+    /* font-size: 0.833vw; */
+    line-height: 1.55rem;
+    font-size: 1rem;
+}
+
+.searchBar::placeholder {
+    color: #7F7F7F;
+    font-size: 1rem;
+    /* color: black; */
+}
