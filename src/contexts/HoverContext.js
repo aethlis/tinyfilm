@@ -22,11 +22,11 @@ export function HoverOverProvider({children}) {
 
     useEffect(() => {
         if (SRCHDIS !== "") {
-            setVIEWER(true)
+            return setVIEWER(true)
         } else if (SRCHDIS === "") {
-            setVIEWER(false)
+            return setVIEWER(false)
         } else {
-            setVIEWER(false)
+            return setVIEWER(false)
         }
     }, [SRCHDIS])
 
