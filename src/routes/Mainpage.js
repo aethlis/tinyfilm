@@ -10,6 +10,7 @@ import { useHoverOver } from "../contexts/HoverContext";
 import { useEffect, useState } from "react";
 import GenreFilter from "../components/GenreFilter";
 import SearchResult from "../components/SearchResult";
+import { useGenreFilt } from "../contexts/FilterContext";
 // import { useContext } from 'react';
 
 function ContentAd() {
@@ -30,6 +31,7 @@ function ContentAd() {
 }
 
 function Mainpage() {
+    const { GenreFilt, setGenreFilt, SelectedGenre, setSelectedGenre } = useGenreFilt();
     const { movies } = useMovieAPI();
     const { ID, COVERIMG, BGIMG, HIDE, TITLE, SUMMARY, GENRES, RUNTIME, VIEWER } = useHoverOver();
 
