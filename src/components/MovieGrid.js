@@ -19,7 +19,6 @@ function MovieGrid({id, summary, coverImg, title, genres, bgImg, runtime}) {
                 setGENRES(genres)
                 setBGIMG(bgImg)
                 setRUNTIME(runtime)
-                setNone(true)
             }}>
                 <div className={styles.img_wrapper}>
                     <img id={styles.coverImg} src={coverImg} alt={id} />

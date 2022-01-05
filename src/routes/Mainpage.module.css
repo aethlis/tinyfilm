@@ -90,6 +90,18 @@
 }
 
 
+.SearchResultContainer {
+    position: fixed;
+    height: 100vh;
+    overflow: scroll;
+    background: white;
+
+    scrollbar-width: 0;
+}
+
+.SearchResultContainer::-webkit-scrollbar {
+    display: none;
+}
 
 
 
