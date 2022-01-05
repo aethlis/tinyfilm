@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 import { useMovieAPI } from "../contexts/FetchAPI";
 import { useHoverOver } from "../contexts/HoverContext";
 import { useSearchFilter } from "../contexts/SearchFilter";
