@@ -49,7 +49,7 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                 trigger: movie4Data.current,
                 start: "40% 70%",
                 end: "bottom 100%",
-                toggleActions: "play pause resume reset",
+                toggleActions: "play none resume reset",
                 // markers: true,
             }
         })
@@ -60,11 +60,31 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                 trigger: movie5Data.current,
                 start: "40% 70%",
                 end: "bottom 100%",
-                toggleActions: "play pause resume reset",
+                toggleActions: "play none resume reset",
                 // markers: true,
             }
         })
     }, [])
+
+    function onClick1() {
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+
+    function onClick2() {
+        window.scrollTo({ top: 810, left: 0, behavior: "smooth" });
+    }
+
+    function onClick3() {
+        window.scrollTo({ top: 1640, left: 0, behavior: "smooth" });
+    }
+
+    function onClick4() {
+        window.scrollTo({ top: 2450, left: 0, behavior: "smooth" });
+    }
+
+    function onClick5() {
+        window.scrollTo({ top: 3500, left: 0, behavior: "smooth" });
+    }
 
     return (
         <div>
@@ -188,11 +208,11 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                 </div>
             </div>
             <div className={styles.scrollBar}>
-                <div className={styles.pageBtn1}></div>
-                <div className={styles.pageBtn2}></div>
-                <div className={styles.pageBtn3}></div>
-                <div className={styles.pageBtn4}></div>
-                <div className={styles.pageBtn5}></div>
+                <div className={styles.pageBtn1} onClick={onClick1}></div>
+                <div className={styles.pageBtn2} onClick={onClick2}></div>
+                <div className={styles.pageBtn3} onClick={onClick3}></div>
+                <div className={styles.pageBtn4} onClick={onClick4}></div>
+                <div className={styles.pageBtn5} onClick={onClick5}></div>
             </div>
         </div>
     );
