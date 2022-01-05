@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Header from "../components/Header";
+import HeaderNoBG from "../components/HeaderNoBG";
 import NewMovies from "../components/NewMovies";
 import { useMovieAPI } from "../contexts/FetchAPI";
 
@@ -11,7 +11,7 @@ function New() {
     }
     return (
         <div>
-            <Header />
+            <HeaderNoBG />
             <NewMovies
                 movie1Img={movies[0].background_image}
                 movie2Img={movies[1].background_image}

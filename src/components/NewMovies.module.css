@@ -1,22 +1,19 @@
-img {
-    width: 380px;
-    height: 230px;
-}
-
 section {
     scroll-snap-align: start;
 }
 
-.fullPage {
-    position: fixed;
-}
+/* .fullPage {
+    scroll-snap-type: y mandatory;
+} */
 
 .imgDiv {
-    margin-left: 60rem;
-    margin-top: 19rem;
-    overflow: scroll;
-    height: 320px;
-    scroll-snap-type: y mandatory;
+    position: absolute;
+    position: fixed;
+    top: 19rem;
+    left: 65rem;
+    overflow: hidden;
+    height: 230px;
+    z-index: 2;
 }
 
 .imgDiv::-webkit-scrollbar {
@@ -27,6 +24,40 @@ section {
     margin-bottom: 1.5rem;
 }
 
-.movie2, .movie3, .movie4, .movie5 {
+/* .movie2, .movie3, .movie4, .movie5 {
     opacity: 50%;
+} */
+
+.fullPage img {
+    width: 100vw;
+    height: 823px;
+}
+
+.imgDiv img {
+    width: 380px;
+    height: 230px;
+}
+
+.bGB {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+    background-color: lightgray;
+    opacity: 20%;
+}
+
+.BGImg {
+    scroll-snap-type: y mandatory;
+}
+
+.hihi {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 99;
+    color: white;
+    font-size: 200px;
 }
