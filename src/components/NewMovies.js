@@ -22,12 +22,43 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
     useEffect(() => {
         gsap.to(bgImg2.current, {
             zIndex: 99,
-            delay: 0.3,
+            // delay: 0.2,
             scrollTrigger: {
                 trigger: movie2Data.current,
-                start: "30% center",
-                toggleActions: "restart none resume none",
-                markers: true,
+                start: "40% 70%",
+                end: "bottom 100%",
+                // toggleActions: "restart pause resume none"
+                // markers: true,
+            }
+        })
+        gsap.to(bgImg3.current, {
+            zIndex: 99,
+            // delay: 0.2,
+            scrollTrigger: {
+                trigger: movie3Data.current,
+                start: "40% 70%",
+                end: "bottom 100%",
+                // markers: true,
+            }
+        })
+        gsap.to(bgImg4.current, {
+            zIndex: 99,
+            // delay: 0.2,
+            scrollTrigger: {
+                trigger: movie4Data.current,
+                start: "40% 70%",
+                end: "bottom 100%",
+                // markers: true,
+            }
+        })
+        gsap.to(bgImg5.current, {
+            zIndex: 99,
+            // delay: 0.2,
+            scrollTrigger: {
+                trigger: movie5Data.current,
+                start: "40% 70%",
+                end: "bottom 100%",
+                // markers: true,
             }
         })
     }, [])
@@ -60,13 +91,15 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                     </div>
                     <div className={styles.movieContentText}>
                         <div className={styles.movieTitle}>
+                            제목
+                            <br />
                             {movie1Title}
                         </div>
                         <div className={styles.movieRating}>
-                            {movie1Rating}
+                            평점 {movie1Rating}점
                         </div>
                         <div className={styles.movieRuntime}>
-                            {movie1RunTime}
+                            러닝타임 {movie1RunTime}분
                         </div>
                     </div>
                 </div>
@@ -78,13 +111,15 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                     </div>
                     <div className={styles.movieContentText}>
                         <div className={styles.movieTitle}>
+                            제목
+                            <br />
                             {movie2Title}
                         </div>
                         <div className={styles.movieRating}>
-                            {movie2Rating}
+                            평점{movie2Rating}점
                         </div>
                         <div className={styles.movieRuntime}>
-                            {movie2RunTime}
+                            러닝타임{movie2RunTime}분
                         </div>
                     </div>
                 </div>
@@ -96,13 +131,15 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                     </div>
                     <div className={styles.movieContentText}>
                         <div className={styles.movieTitle}>
+                            제목
+                            <br />
                             {movie3Title}
                         </div>
                         <div className={styles.movieRating}>
-                            {movie3Rating}
+                            평점{movie3Rating}점
                         </div>
                         <div className={styles.movieRuntime}>
-                            {movie3RunTime}
+                            러닝타임{movie3RunTime}분
                         </div>
                     </div>
                 </div>
@@ -114,13 +151,15 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                     </div>
                     <div className={styles.movieContentText}>
                         <div className={styles.movieTitle}>
+                            제목
+                            <br />
                             {movie4Title}
                         </div>
                         <div className={styles.movieRating}>
-                            {movie4Rating}
+                            평점{movie4Rating}점
                         </div>
                         <div className={styles.movieRuntime}>
-                            {movie4RunTime}
+                            러닝타임{movie4RunTime}분
                         </div>
                     </div>
                 </div>
@@ -131,13 +170,15 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                     </div>
                     <div className={styles.movieContentText}>
                         <div className={styles.movieTitle}>
+                            제목
+                            <br />
                             {movie5Title}
                         </div>
                         <div className={styles.movieRating}>
-                            {movie5Rating}
+                            평점{movie5Rating}점
                         </div>
                         <div className={styles.movieRuntime}>
-                            {movie5RunTime}
+                            러닝타임{movie5RunTime}분
                         </div>
                     </div>
                 </div>

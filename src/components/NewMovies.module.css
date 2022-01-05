@@ -11,6 +11,10 @@
     top: 0;
 }
 
+/* .bgImg2, .bgImg3, .bgImg4, .bgImg5 {
+    opacity: 0;
+} */
+
 .bgImg1 {
     z-index: 10;
 }
