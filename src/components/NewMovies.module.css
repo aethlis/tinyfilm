@@ -1,10 +1,10 @@
-section {
+/* section {
     scroll-snap-align: start;
 }
 
-/* .fullPage {
+.fullPage {
     scroll-snap-type: y mandatory;
-} */
+}
 
 .imgDiv {
     position: absolute;
@@ -24,9 +24,9 @@ section {
     margin-bottom: 1.5rem;
 }
 
-/* .movie2, .movie3, .movie4, .movie5 {
+.movie2, .movie3, .movie4, .movie5 {
     opacity: 50%;
-} */
+}
 
 .fullPage img {
     width: 100vw;
@@ -51,7 +51,7 @@ section {
     scroll-snap-type: y mandatory;
 }
 
-/* .hihi {
+.hihi {
     position: absolute;
     top: 0;
     width: 100vw;
@@ -61,3 +61,85 @@ section {
     color: white;
     font-size: 200px;
 } */
+
+section {
+    background-attachment: fixed;
+}
+
+.bgImg {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+.bgB {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 40%;
+}
+
+.movie1Data {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 1048px;
+}
+
+.movieContent {
+    margin-top: 17rem;
+    margin-left: 26rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.movieContentText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    width: 500px;
+}
+
+.movieTitle {
+    font-size: 25px;
+}
+
+.movieRating, .movieRuntime {
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+.movie2Data {
+    position: absolute;
+    /* background-color: pink; */
+    width: 100vw;
+    height: 821px;
+}
+
+.movie3Data {
+    position: absolute;
+    top: 117.3rem;
+    /* background-color: black; */
+    width: 100vw;
+    height: 821px;
+}
+
+.movie4Data {
+    position: absolute;
+    top: 176rem;
+    /* background-color: black; */
+    width: 100vw;
+    height: 821px;
+}
+
+.movie5Data {
+    position: absolute;
+    top: 234.7rem;
+    /* background-color: black; */
+    width: 100vw;
+    height: 821px;
+}
+
+
