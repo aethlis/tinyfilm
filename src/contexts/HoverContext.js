@@ -25,6 +25,8 @@ export function HoverOverProvider({children}) {
             setVIEWER(true)
         } else if (SRCHDIS === "") {
             setVIEWER(false)
+        } else {
+            setVIEWER(false)
         }
     }, [SRCHDIS])
 
