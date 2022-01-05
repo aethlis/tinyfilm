@@ -1,21 +1,32 @@
 img {
-    width: 350px;
-    height: 200px;
+    width: 380px;
+    height: 230px;
+}
+
+section {
+    scroll-snap-align: start;
 }
 
 .fullPage {
     position: fixed;
-    position: relative;
 }
 
 .imgDiv {
-    margin-top: 6.7rem;
-    height: 700px;
+    margin-left: 60rem;
+    margin-top: 19rem;
     overflow: scroll;
-    position: absolute;
-    right: 0;
+    height: 320px;
+    scroll-snap-type: y mandatory;
 }
 
-.movie5 {
-    margin-top: 2rem;
+.imgDiv::-webkit-scrollbar {
+    display: none;
+}
+
+.movie1, .movie2, .movie3, .movie4 {
+    margin-bottom: 1.5rem;
+}
+
+.movie2, .movie3, .movie4, .movie5 {
+    opacity: 50%;
 }
