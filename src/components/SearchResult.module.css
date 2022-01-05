@@ -6,6 +6,7 @@
     align-items: center;
     flex-flow: column nowrap;
     z-index: 59;
+    background: white;
 }
 
 .title {
