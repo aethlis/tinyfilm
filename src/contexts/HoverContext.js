@@ -1,5 +1,5 @@
 import { createContext, useState, useContext } from "react";
-import { useEffect } from "react/cjs/react.development";
+import { useEffect } from "react";
 
 export const HoverOver = createContext();
 
@@ -24,8 +24,6 @@ export function HoverOverProvider({children}) {
         if (SRCHDIS !== "") {
             return setVIEWER(true)
         } else if (SRCHDIS === "") {
-            return setVIEWER(false)
-        } else {
             return setVIEWER(false)
         }
     }, [SRCHDIS])
