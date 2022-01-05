@@ -13,7 +13,6 @@ function SearchBar() {
     const [inputVal, setVal] = useState("")
     
     useEffect(() => {
-        console.log(inputVal)
         const filteredData = movies.filter((item) => {
             return (
                 Object.values(item.title).join('').toLowerCase().includes(inputVal.toLowerCase())
@@ -23,7 +22,7 @@ function SearchBar() {
         setSRCHDIS(inputVal)
         setIfEmpty(filteredData.length)
     }, [inputVal])
-    
+
     return (
         <div className={styles.searchWrap}>
             <form onSubmit={e => e.preventDefault()} name="searchForm">

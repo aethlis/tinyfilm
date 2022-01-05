@@ -3,10 +3,10 @@ import { useGenreFilt } from "../contexts/FilterContext";
 import styles from "./GenreFilter.module.css"
 
 function GenreFilter() {
-    const { SelectedGenre, setSelectedGenre } = useGenreFilt();
-    useEffect(() => {
-        console.log(SelectedGenre)
-    }, [SelectedGenre])
+    // const { SelectedGenre, setSelectedGenre } = useGenreFilt();
+    // useEffect(() => {
+    //     console.log(SelectedGenre)
+    // }, [SelectedGenre])
     return (
         <div className={styles.genreFilter}>
             <div className={styles.moviesTitle}>Movies</div>
