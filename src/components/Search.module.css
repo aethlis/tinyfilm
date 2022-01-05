@@ -26,6 +26,6 @@
 
 @media (max-width: 414px) {
     .searchBar {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
