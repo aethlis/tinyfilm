@@ -113,20 +113,32 @@
     border-color: white;
 }
 
-.pageBtn {
+.pageBtn1, .pageBtn2, .pageBtn3, .pageBtn4, .pageBtn5 {
     border-radius: 50%;
     width: 20px;
     height: 20px;
     position: absolute;
-    right: -14px;
+    top: 6rem;
+    right: -13.4px;
     border-style: solid;
     z-index: 12;
     background-color: black;
 }
 
 .pageBtn2 {
-    position: absolute;
-    margin-top: 5rem;
+    top: 12rem;
+}
+
+.pageBtn3 {
+    top: 18rem;
+}
+
+.pageBtn4 {
+    top: 24rem;
+}
+
+.pageBtn5 {
+    top: 30rem;
 }
 
 

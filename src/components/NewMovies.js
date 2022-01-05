@@ -60,7 +60,7 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                 trigger: movie5Data.current,
                 start: "40% 70%",
                 end: "bottom 100%",
-                // toggleActions: "play pause resume reset",
+                toggleActions: "play pause resume reset",
                 // markers: true,
             }
         })
@@ -119,10 +119,10 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                             {movie2Title}
                         </div>
                         <div className={styles.movieRating}>
-                            평점{movie2Rating}점
+                            평점 {movie2Rating}점
                         </div>
                         <div className={styles.movieRuntime}>
-                            러닝타임{movie2RunTime}분
+                            러닝타임 {movie2RunTime}분
                         </div>
                     </div>
                 </div>
@@ -139,10 +139,10 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                             {movie3Title}
                         </div>
                         <div className={styles.movieRating}>
-                            평점{movie3Rating}점
+                            평점 {movie3Rating}점
                         </div>
                         <div className={styles.movieRuntime}>
-                            러닝타임{movie3RunTime}분
+                            러닝타임 {movie3RunTime}분
                         </div>
                     </div>
                 </div>
@@ -159,10 +159,10 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                             {movie4Title}
                         </div>
                         <div className={styles.movieRating}>
-                            평점{movie4Rating}점
+                            평점 {movie4Rating}점
                         </div>
                         <div className={styles.movieRuntime}>
-                            러닝타임{movie4RunTime}분
+                            러닝타임 {movie4RunTime}분
                         </div>
                     </div>
                 </div>
@@ -179,22 +179,20 @@ function NewMovies({ movie1BgImg, movie1Poster, movie1Title, movie1Rating, movie
                             {movie5Title}
                         </div>
                         <div className={styles.movieRating}>
-                            평점{movie5Rating}점
+                            평점 {movie5Rating}점
                         </div>
                         <div className={styles.movieRuntime}>
-                            러닝타임{movie5RunTime}분
+                            러닝타임 {movie5RunTime}분
                         </div>
                     </div>
                 </div>
             </div>
             <div className={styles.scrollBar}>
-                <div className={styles.pageBtn}>
-                    <div className={styles.pageBtn1}></div>
-                    <div className={styles.pageBtn2}></div>
-                    <div className={styles.pageBtn3}></div>
-                    <div className={styles.pageBtn4}></div>
-                    <div className={styles.pageBtn5}></div>
-                </div>
+                <div className={styles.pageBtn1}></div>
+                <div className={styles.pageBtn2}></div>
+                <div className={styles.pageBtn3}></div>
+                <div className={styles.pageBtn4}></div>
+                <div className={styles.pageBtn5}></div>
             </div>
         </div>
     );
