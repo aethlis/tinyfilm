@@ -10,10 +10,11 @@ import { FiltGenreProvider } from './contexts/FilterContext';
 
 function App() {
   return (
-    <FiltGenreProvider>
-      <HoverOverProvider>
-        <SearchFilterProvider>
-          <FetchAPIProvider>
+    <HoverOverProvider>
+      <SearchFilterProvider>
+        <FetchAPIProvider>
+          <FiltGenreProvider>
+
             <Router basename={process.env.PUBLIC_URL}>
               <Routes>
                 <Route path="/" element={<Mainpage />}>
@@ -24,10 +25,10 @@ function App() {
                 </Route>
               </Routes>
             </Router>
-          </FetchAPIProvider>
-        </SearchFilterProvider>
-      </HoverOverProvider>
-    </FiltGenreProvider>
+          </FiltGenreProvider>
+        </FetchAPIProvider>
+      </SearchFilterProvider>
+    </HoverOverProvider>
   );
 }
 
