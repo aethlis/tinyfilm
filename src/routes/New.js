@@ -13,11 +13,11 @@ function New() {
         <div>
             <HeaderNoBG />
             <NewMovies
-                movie1Img={movies[0].background_image}
-                movie2Img={movies[1].background_image}
-                movie3Img={movies[2].background_image}
-                movie4Img={movies[3].background_image}
-                movie5Img={movies[4].background_image}
+                movie1BgImg={movies[0].background_image}
+                movie2BgImg={movies[1].background_image}
+                movie3BgImg={movies[2].background_image}
+                movie4BgImg={movies[3].background_image}
+                movie5BgImg={movies[4].background_image}
                 movie1Title={movies[0].title}
                 movie2Title={movies[1].title}
                 movie3Title={movies[2].title}

@@ -1,63 +1,140 @@
-section {
-    scroll-snap-align: start;
-}
-
-/* .fullPage {
-    scroll-snap-type: y mandatory;
-} */
-
-.imgDiv {
-    position: absolute;
+.bgImg {
     position: fixed;
-    top: 19rem;
-    left: 65rem;
-    overflow: hidden;
-    height: 230px;
-    z-index: 2;
+    overflow: scroll;
+    height: 1048px;
 }
 
-.imgDiv::-webkit-scrollbar {
-    display: none;
-}
-
-.movie1, .movie2, .movie3, .movie4 {
-    margin-bottom: 1.5rem;
-}
-
-/* .movie2, .movie3, .movie4, .movie5 {
-    opacity: 50%;
-} */
-
-.fullPage img {
+.bgImg1, .bgImg2, .bgImg3, .bgImg4, .bgImg5 {
     width: 100vw;
-    height: 823px;
-}
-
-.imgDiv img {
-    width: 380px;
-    height: 230px;
-}
-
-.bGB {
+    height: 100vh;
     position: absolute;
     top: 0;
-    width: 100vw;
-    z-index: 1;
-    background-color: lightgray;
-    opacity: 20%;
 }
 
-.BGImg {
-    scroll-snap-type: y mandatory;
+.bgImg1 {
+    z-index: 10;
 }
 
-.hihi {
-    position: absolute;
-    top: 0;
+.bgImg2 {
+    z-index: 9;
+}
+
+.bgImg3 {
+    z-index: 8;
+}
+
+.bgImg4 {
+    z-index: 7;
+}
+
+.bgImg5 {
+    z-index: 6;
+}
+
+.bgB {
     width: 100vw;
     height: 100vh;
     background-color: black;
-    z-index: 99;
-    color: white;
-    font-size: 200px;
+    opacity: 40%;
 }
+
+.movie1Data {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 1048px;
+}
+
+.movieContent {
+    margin-top: 17rem;
+    margin-left: 23rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.movieContentText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    width: 500px;
+}
+
+.movieTitle {
+    font-size: 25px;
+}
+
+.movieRating, .movieRuntime {
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+.movie2Data {
+    position: absolute;
+    top: 58.7rem;
+    width: 100vw;
+    height: 821px;
+}
+
+.movie3Data {
+    position: absolute;
+    top: 117.3rem;
+    width: 100vw;
+    height: 821px;
+}
+
+.movie4Data {
+    position: absolute;
+    top: 175.9rem;
+    width: 100vw;
+    height: 821px;
+}
+
+.movie5Data {
+    position: absolute;
+    top: 234.6rem;
+    width: 100vw;
+    height: 821px;
+}
+
+.scrollBar {
+    position: absolute;
+    position: fixed;
+    top: 11.5rem;
+    right: 8rem;
+    z-index: 11;
+    border-style: solid;
+    height: 37rem;
+    border-width: 1px;
+    border-color: white;
+}
+
+.pageBtn1, .pageBtn2, .pageBtn3, .pageBtn4, .pageBtn5 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 6rem;
+    right: -13.4px;
+    border-style: solid;
+    z-index: 12;
+    background-color: black;
+}
+
+.pageBtn2 {
+    top: 12rem;
+}
+
+.pageBtn3 {
+    top: 18rem;
+}
+
+.pageBtn4 {
+    top: 24rem;
+}
+
+.pageBtn5 {
+    top: 30rem;
+}
+
+
