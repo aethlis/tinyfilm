@@ -74,20 +74,37 @@ function Mainpage() {
                         </div>
                         <div className={styles.movie_container}>
                             <div className={styles.movie_wrap}>
-                                {movies.map((movie) => {
-                                    return (
-                                        <MovieGrid
-                                            key={movie.id}
-                                            id={movie.id}
-                                            title={movie.title}
-                                            coverImg={movie.large_cover_image}
-                                            bgImg={movie.background_image_original}
-                                            summary={movie.summary}
-                                            runtime={movie.runtime}
-                                            genres={movie.genres}
-                                        />
-                                    )
-                                })}
+                                {(SelectedGenre === "") ? (
+                                    movies.map((movie) => {
+                                        return (
+                                            <MovieGrid
+                                                key={movie.id}
+                                                id={movie.id}
+                                                title={movie.title}
+                                                coverImg={movie.large_cover_image}
+                                                bgImg={movie.background_image_original}
+                                                summary={movie.summary}
+                                                runtime={movie.runtime}
+                                                genres={movie.genres}
+                                            />
+                                        )
+                                    })
+                                ) : (
+                                    GenreFilt.map((movie) => {
+                                        return (
+                                            <MovieGrid
+                                                key={movie.id}
+                                                id={movie.id}
+                                                title={movie.title}
+                                                coverImg={movie.large_cover_image}
+                                                bgImg={movie.background_image_original}
+                                                summary={movie.summary}
+                                                runtime={movie.runtime}
+                                                genres={movie.genres}
+                                            />
+                                        )
+                                    })
+                                )}
                             </div>
                         </div>
                         <div className={styles.footer}></div>

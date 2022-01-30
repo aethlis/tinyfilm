@@ -26,7 +26,7 @@ function GenreFilter() {
                 </div>
                 <div className={styles.budget}>
                     <select className={styles.selectors} name="budget">
-                        <option className={styles.Options} value="BudgetAll">전체</option>
+                        <option className={styles.Options} value="">전체</option>
                         <option className={styles.Options} value="500">5백만원 이하</option>
                         <option className={styles.Options} value="500">5백만원 ~ 천만원</option>
                         <option className={styles.Options} value="500">천만원 ~ 5천만원</option>

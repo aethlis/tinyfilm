@@ -29,6 +29,7 @@
     font-size: 1rem;
     width: 100%;
     word-break: keep-all;
+    opacity: 0.6;
 }
 
 .img_wrapper {
