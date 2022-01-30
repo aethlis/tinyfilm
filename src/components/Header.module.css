@@ -10,7 +10,8 @@
     width: 100vw;
     /* height: 4.762vw; */
     height: 5.71428571rem;
-    background-color: white;
+    background: rgb(255,255,255);
+    /* background: linear-gradient(180deg, rgba(255,255,255,1) 65%, rgba(255,255,255,0) 100%); */
     display: flex;
     align-items: center;
     justify-content: center;

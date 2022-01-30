@@ -64,6 +64,21 @@ function Mainpage() {
                 </div>
             ) : null }
             <div className={styles.fullpage}>
+                {!HIDE ? 
+                    <HoverShow
+                        id={ID}
+                        title={TITLE}
+                        coverImg={COVERIMG}
+                        bgImg={BGIMG}
+                        summary={SUMMARY}
+                        genres={GENRES}
+                        hidden={HIDE}
+                        runtime={RUNTIME}
+                    /> : null
+                }
+
+
+
                 {!VIEWER ? (
                     <div className={styles.mainpageItem}>
                         <div className={styles.ContentAd_container}>
@@ -110,22 +125,6 @@ function Mainpage() {
                         <div className={styles.footer}></div>
                     </div>
                 ) : null }
-                {/* {(SRCHDIS !== "") ? <SearchResult /> : null} */}
-
-
-
-                {!HIDE ? 
-                    <HoverShow
-                        id={ID}
-                        title={TITLE}
-                        coverImg={COVERIMG}
-                        bgImg={BGIMG}
-                        summary={SUMMARY}
-                        genres={GENRES}
-                        hidden={HIDE}
-                        runtime={RUNTIME}
-                    /> : null
-                }
             </div>
         </div>
     )
