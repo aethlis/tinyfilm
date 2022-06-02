@@ -15,7 +15,7 @@ function SearchBar() {
     useEffect(() => {
         const filteredData = movies.filter((item) => {
             return (
-                Object.values(item.title).join('').toLowerCase().includes(inputVal.toLowerCase())
+                Object.values(item.attributes.title).join('').toLowerCase().includes(inputVal.toLowerCase())
             )
         });
         setSearchedMovies(filteredData);

@@ -27,10 +27,10 @@
     height: calc(90vw / 16 * 9 - 5.71428571rem * 2 + 38.5px);
     /* height: 82.0945945945946vh; */
     /* border: black 2px solid; */
-    overflow: hidden;
+    overflow-x: scroll;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     background-image: url(../img/TestImg.png);  
     background-size: cover;
     background-size: cover;
@@ -39,7 +39,25 @@
     background-blend-mode: multiply;
     border-radius: 5px;
     box-shadow: 0px 5px 10px black;
+    scroll-snap-type: x mandatory;
+    flex-flow: row;
+}
 
+.ObjectBox {
+    width: 90vw;
+    height: calc(90vw / 16 * 9 - 5.71428571rem * 2 + 38.5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.textBoxCont {
+    width: 90vw;
+    height: calc(90vw / 16 * 9 - 5.71428571rem * 2 + 38.5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .textinfo {
@@ -94,7 +112,6 @@
     position: fixed;
     height: 100vh;
     overflow: scroll;
-    background: white;
 
     scrollbar-width: 0;
 }
@@ -189,7 +206,7 @@
     margin-top: 5rem;
     width: 100vw;
     height: 21rem;
-    background-color: black;
+    background-color: rgb(29, 29, 29);
 }
 
 /* body::-webkit-scrollbar {

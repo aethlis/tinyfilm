@@ -7,33 +7,42 @@ import MovieGrid from "../components/MovieGrid";
 import HoverShow from "../components/MovieHoverOver";
 import { useMovieAPI } from "../contexts/FetchAPI";
 import { useHoverOver } from "../contexts/HoverContext";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import GenreFilter from "../components/GenreFilter";
 import SearchResult from "../components/SearchResult";
 import { useGenreFilt } from "../contexts/FilterContext";
 // import { useContext } from 'react';
 
 function ContentAd() {
+    const { FilterAPI } = useMovieAPI();
+
     return (
         <div className={styles.ContentAd}>
-            {/* <img src={TestImg} alt="TestImg" className={styles.testingImg} /> */}
-            <div className={styles.textinfo}>
-                <div className={styles.textbox}>
-                    <div className={styles.title}>title</div>
-                    <div className={styles.summary}>Just an expression of mind and soul, deep within a humans brain and heart.</div>
-                    <div className={styles.buttonwrap}>
-                        <PlayButton />
+            {FilterAPI.map((item) => {
+                return (
+                    <div key={item.id} className={styles.ObjectBox}>
+                        <div className={styles.textBoxCont}>
+                            <div className={styles.textinfo}>
+                                <div className={styles.textbox}>
+                                    <div className={styles.title}>{item.title}</div>
+                                    <div className={styles.summary}>{item.plot}</div>
+                                    <div className={styles.buttonwrap}>
+                                        <PlayButton />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                )
+            })}
         </div>
     )
 }
 
 function Mainpage() {
-    const { GenreFilt, setGenreFilt, SelectedGenre, setSelectedGenre } = useGenreFilt();
-    const { movies } = useMovieAPI();
-    const { ID, COVERIMG, BGIMG, HIDE, TITLE, SUMMARY, GENRES, RUNTIME, VIEWER } = useHoverOver();
+    const { InterFilt, SelectedGenre, SelectedBudget } = useGenreFilt();
+    const { FilterAPI } = useMovieAPI();
+    const { ID, COVERIMG, BGIMG, HIDE, TITLE, SUMMARY, MAKING, GENRES, RUNTIME, VIEWER } = useHoverOver();
 
     const body = document.querySelector("body")
     const disableScroll = () => {
@@ -71,6 +80,7 @@ function Mainpage() {
                         coverImg={COVERIMG}
                         bgImg={BGIMG}
                         summary={SUMMARY}
+                        making={MAKING}
                         genres={GENRES}
                         hidden={HIDE}
                         runtime={RUNTIME}
@@ -89,8 +99,8 @@ function Mainpage() {
                         </div>
                         <div className={styles.movie_container}>
                             <div className={styles.movie_wrap}>
-                                {(SelectedGenre === "") ? (
-                                    movies.map((movie) => {
+                                {(SelectedBudget === "" && SelectedGenre === "") ? (
+                                    FilterAPI.map((movie) => {
                                         return (
                                             <MovieGrid
                                                 key={movie.id}
@@ -98,14 +108,15 @@ function Mainpage() {
                                                 title={movie.title}
                                                 coverImg={movie.large_cover_image}
                                                 bgImg={movie.background_image_original}
-                                                summary={movie.summary}
+                                                summary={movie.plot}
+                                                making={movie.production_intention}
                                                 runtime={movie.runtime}
-                                                genres={movie.genres}
+                                                genres={movie.filters}
                                             />
                                         )
                                     })
                                 ) : (
-                                    GenreFilt.map((movie) => {
+                                    InterFilt.map((movie) => {
                                         return (
                                             <MovieGrid
                                                 key={movie.id}
@@ -113,9 +124,10 @@ function Mainpage() {
                                                 title={movie.title}
                                                 coverImg={movie.large_cover_image}
                                                 bgImg={movie.background_image_original}
-                                                summary={movie.summary}
+                                                summary={movie.plot}
+                                                making={movie.production_intention}
                                                 runtime={movie.runtime}
-                                                genres={movie.genres}
+                                                genres={movie.filters}
                                             />
                                         )
                                     })

@@ -3,7 +3,7 @@ import { useHoverOver } from '../contexts/HoverContext';
 import PlayButton from './PlayButton';
 import CloseButton from './CloseBtn';
 
-function HoverShow({id, coverImg, title, summary, genres, bgImg, runtime}) {
+function HoverShow({id, coverImg, title, summary, making, genres, bgImg, runtime}) {
     const {setHIDE, setNone} = useHoverOver();
     return (
         <div className={styles.container} key={id}>
@@ -41,15 +41,15 @@ function HoverShow({id, coverImg, title, summary, genres, bgImg, runtime}) {
 
                                 <div className={styles.titleWrapperTwo}>
                                     <div className={styles.title}>제작의도</div>
-                                    <div className={styles.summary}>{summary}</div>
+                                    <div className={styles.summary}>{making}</div>
                                     <div className={styles.genresWrapper}>
                                         <div className={styles.genreList}>장르:</div>
                                         <div className={styles.genreBox}>
-                                            {genres.map((genre) => {
-                                                return (
-                                                    <div className={styles.genres} key={genre}>{genre},</div>
-                                                )
-                                            })}
+                                                {genres.map((genre) => {
+                                                    return (
+                                                        <div className={styles.genres} key={genre}>{genre}</div>
+                                                    )
+                                                })}
                                         </div>
                                     </div>
                                 </div>

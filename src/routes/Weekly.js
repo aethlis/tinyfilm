@@ -8,11 +8,11 @@ import SearchResult from "../components/SearchResult";
 // import { useEffect } from "react";
 
 function Weekly() {
-    const { movies } = useMovieAPI();
+    const { movies, FilterAPI, loading, WeeklyOne, WeeklyTwo } = useMovieAPI();
     const { VIEWER } = useHoverOver();
-    if (movies.length < 50) {
-        return (<div />)
-    }
+    // if (movies.length < 50) {
+    //     return (<div />)
+    // }
     // useEffect(() => {
     //     console.log(movies[15].title);
     // }, [movies[15]])
@@ -33,14 +33,16 @@ function Weekly() {
                         WEEKLY PICK
                     </div>
                     <div className={styles.weeklyMovies}>
-                        <WeeklyMovies
-                            weeklyMovie1Img={movies[14].background_image}
-                            weeklyMovie1Title={movies[14].title}
-                            weeklyMovie1Intro={movies[14].summary}
-                            weeklyMovie2Img={movies[20].background_image}
-                            weeklyMovie2Title={movies[20].title}
-                            weeklyMovie2Intro={movies[20].summary}
+                        {!loading ? 
+                            <WeeklyMovies
+                                weeklyMovie1Img={WeeklyOne?.background_image}
+                                weeklyMovie1Title={WeeklyOne?.title}
+                                weeklyMovie1Intro={WeeklyOne?.plot}
+                                weeklyMovie2Img={WeeklyTwo?.background_image}
+                                weeklyMovie2Title={WeeklyTwo?.title}
+                                weeklyMovie2Intro={WeeklyTwo?.plot}
                         />
+                         : null}
                     </div>
                 </div>
             ) : null}
