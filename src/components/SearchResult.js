@@ -43,12 +43,12 @@ function SearchResult() {
                             <MovieGrid
                                 key={movie.id}
                                 id={movie.id}
-                                title={movie.attributes.title}
-                                coverImg={movie.attributes.large_cover_image}
-                                bgImg={movie.attributes.background_image_original}
-                                summary={movie.attributes.plot}
-                                runtime={movie.attributes.runtime}
-                                genres={movie.attributes.genres}
+                                title={movie.title}
+                                coverImg={movie.large_cover_image}
+                                bgImg={movie.background_image_original}
+                                summary={movie.plot}
+                                runtime={movie.runtime}
+                                genres={[movie.genres]}
                             />
                         )
                     })}

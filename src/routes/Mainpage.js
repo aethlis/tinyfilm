@@ -75,6 +75,7 @@ function Mainpage() {
             <div className={styles.fullpage}>
                 {!HIDE ? 
                     <HoverShow
+                        key={ID}
                         id={ID}
                         title={TITLE}
                         coverImg={COVERIMG}

@@ -1,6 +1,62 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 // import App from "../App"
 
+import {gql, useQuery} from '@apollo/client'
+
+const GET_MOVIE = gql`
+    query getMovie($movieId: String!) {
+        movie(id: $movieId) {
+            id
+            title
+            medium_cover_image
+            rating
+            isLiked @client
+        }
+    }
+`
+console.log(GET_MOVIE)
+
+// function Movie() {
+//     const { id } = useParams();
+//     const { data, loading, client: {cache} } = useQuery(GET_MOVIE, {
+//         variables: {
+//             movieId: id,
+//         },
+//     })
+//     const onClick = () => {
+//         cache.writeFragment({
+//             id: `Movie:${id}`,
+//             fragment: gql`
+//                 fragment MovieFragment on Movie {
+//                     isLiked
+//                 }
+//             `,
+//             data: {
+//                 isLiked: !data.movie.isLiked,
+//             }
+//         })
+//     };
+//     return (
+//         <Container>
+//             <div>
+//             <div>
+//                 {loading ? "Loading..." : `${data.movie?.title}`}
+//             </div>
+//             <div>{data?.movie?.rating}</div>
+//             <button onClick={onClick}>{data?.movie?.isLiked ? "Unlike":"Like"}</button>
+//             </div>
+
+//             <Column>
+//                 <Title>{loading ? "Loading..." : `${data.movie?.title}`}</Title>
+//                 <Subtitle>⭐️ {data?.movie?.rating}</Subtitle>
+//                 <button onClick={onClick}>{data?.movie?.isLiked ? "Unlike":"Like"}</button>
+//             </Column>
+//             <Image bg={data?.movie?.medium_cover_image} />
+//         </Container>
+//     );
+// }
+
+
 export const FetchAPI = createContext();
 
 export function useMovieAPI() {
@@ -57,8 +113,6 @@ export function FetchAPIProvider({ children }) {
     useEffect(() => {
         getMovies();
         getFilters();
-        // testing();
-        // console.log(testA)
     }, []);
 
     const CloneDArray = []
@@ -97,6 +151,7 @@ export function FetchAPIProvider({ children }) {
         setLoading(false)
         setWeekOne(CloneDArray[14])
         setWeekTwo(CloneDArray[20])
+        console.log(CloneDArray)
     }, [FieldMovie])
 
     useEffect(() => {
@@ -106,7 +161,7 @@ export function FetchAPIProvider({ children }) {
 
     
     return (
-        <FetchAPI.Provider value={{ FilterAPI ,FieldMovie, movies, loading, setLoading, WeeklyOne, WeeklyTwo }}>
+        <FetchAPI.Provider value={{ FilterAPI ,FieldMovie, movies, loading, setLoading, WeeklyOne, WeeklyTwo, CloneDArray }}>
             {children}
         </FetchAPI.Provider>
     )

@@ -6,16 +6,16 @@ import styles from "./Search.module.css"
 
 function SearchBar() {
     const { setSearchedMovies, setIfEmpty } = useSearchFilter();
-    const { movies } = useMovieAPI();
+    const { movies, CloneDArray } = useMovieAPI();
 
     const { setSRCHDIS } = useHoverOver();
 
     const [inputVal, setVal] = useState("")
     
     useEffect(() => {
-        const filteredData = movies.filter((item) => {
+        const filteredData = CloneDArray.filter((item) => {
             return (
-                Object.values(item.attributes.title).join('').toLowerCase().includes(inputVal.toLowerCase())
+                Object.values(item.title).join('').toLowerCase().includes(inputVal.toLowerCase())
             )
         });
         setSearchedMovies(filteredData);
